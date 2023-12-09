@@ -5,11 +5,11 @@ const welcomeMessage = 'Hello! Welcome to my portfolio.';
 
 function Header() {
   return (
-    <div>
+    <header>
       <p>{developerName} </p>
       <p>{welcomeMessage} </p>
       <Nav />
-    </div>
+    </header>
   );
 }
 

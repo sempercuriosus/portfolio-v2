@@ -1,8 +1,10 @@
+import { Outlet } from 'react-router-dom';
+
 function Index() {
   return (
-    <div>
-      <p> Index Display Test </p>
-    </div>
+    <main>
+      <Outlet />
+    </main>
   );
 }
 
