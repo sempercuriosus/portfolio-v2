@@ -1,3 +1,4 @@
+import React from 'react';
 import './style/App.css';
 import Header from './components/Header/header.jsx';
 
@@ -9,14 +10,18 @@ function App() {
     /* setting up the app structure */
   }
   return (
-    <div>
+    <React.Fragment>
       {/* Header also adds the nav */}
       <Header />
+
       {/* Index is responsible for rendering the content for each page rendered */}
-      <Index />
+      <main>
+        {/* rendering the main content element now, and the index is responsible for section element */}
+        <Index />
+      </main>
 
       <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 
