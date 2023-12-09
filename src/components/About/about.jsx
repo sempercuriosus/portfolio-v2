@@ -1,5 +1,5 @@
 function About() {
-  document.title = 'About';
+  document.title = 'About | Third Coast 🦡';
 
   return (
     <section>
