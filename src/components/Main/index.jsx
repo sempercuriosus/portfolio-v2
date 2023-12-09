@@ -1,7 +1,10 @@
-// first, create the component
-
 function Index() {
-  return <p>Index display test</p>;
+  return (
+    <div>
+      <p> Index Display Test </p>
+    </div>
+  );
 }
 
 export default Index;
+

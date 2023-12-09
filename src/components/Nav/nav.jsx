@@ -1,5 +1,12 @@
 function Nav() {
-  return <p>Nav display test</p>;
+  return (
+    <div>
+      <a href='#About'>About</a>
+      <a href='#Portfolio'>Portfolio</a>
+      <a href='#Resume'>Resume</a>
+      <a href='#Contact'>Contact</a>
+    </div>
+  );
 }
 
 export default Nav;
