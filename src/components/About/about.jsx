@@ -1,9 +1,11 @@
 function About() {
+  document.title = 'About';
+
   return (
-    <div>
+    <section>
       <p> About Eric Hulse </p>
       <p>I AM A DEVELOPER</p>
-    </div>
+    </section>
   );
 }
 
