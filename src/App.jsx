@@ -3,6 +3,7 @@ import "./style/App.css";
 
 function App() {
   return <h1>portfolio v2</h1>;
+  // setting up the app structure
 }
 
 export default App;
