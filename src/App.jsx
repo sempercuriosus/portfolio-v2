@@ -1,9 +1,22 @@
-import { useState } from "react";
-import "./style/App.css";
+import './style/App.css';
+import Header from './components/Header/header.jsx';
+import Nav from './components/Nav/nav.jsx';
+import Index from './components/Main/index.jsx';
+import Footer from './components/Footer/footer.jsx';
 
 function App() {
-  return <h1>portfolio v2</h1>;
-  // setting up the app structure
+  {
+    /* setting up the app structure */
+  }
+  return (
+    <div>
+      <Header>
+        <Nav />
+      </Header>
+      <Index />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
