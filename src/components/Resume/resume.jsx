@@ -1,10 +1,15 @@
+import ResumePlaceholder from '../../assets/resume/eric-hulse-placeholder.pdf';
+
+const liveResume = ResumePlaceholder;
+const downloadName = 'Eric-Hulse-Resume2023Dec';
+
 function Resume() {
   document.title = 'Resume | Third Coast 🦡';
   return (
     <section id='resume'>
-      <div id='dev_experience'>
-        <ul>
-          <h3>Tech Stack</h3>
+      <div id='experience'>
+        <h2 id='experience-title'>Tech Stack</h2>
+        <ul id='experience-list'>
           <li>Javascript</li>
           <li>Express</li>
           <li>Node</li>
@@ -14,13 +19,15 @@ function Resume() {
           <li>T-Sql and NoSql</li>
           <li>MongoDB</li>
         </ul>
+      </div>
 
-        <h3>Other Projects</h3>
-        <li>
+      <div id='other-experience'>
+        <h2 id='other-title'>Other Projects</h2>
+        <p id='other-title-pi'>
           Recently, I have been learning some about Rasperry Pi. Here are my
           projects:
-        </li>
-        <ul>
+        </p>
+        <ul id='other-list-pi'>
           <li>Pi Hole</li>
           <li>Retro Pi</li>
           <li>
@@ -29,10 +36,19 @@ function Resume() {
           </li>
         </ul>
       </div>
-      <div>
+
+      <div id='resume-download'>
         <p>
-          My resume is downloadable and can be found <a href='#'>here</a>.
+          My resume is available as downloadable PDF and can be found below.
         </p>
+        <a
+          id='resume-link'
+          href={liveResume}
+          download={downloadName}
+          target='_blank'
+          rel='noopener noreferrer'>
+          <button>Download My Resume</button>
+        </a>
       </div>
     </section>
   );
