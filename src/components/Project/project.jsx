@@ -1,4 +1,5 @@
 import React from 'react';
+import titleCase from '../../utils/titleCase';
 
 // A Project represents a single piece of work
 
@@ -17,7 +18,7 @@ function Projects({ project }) {
   return (
     <React.Fragment>
       <div className='project-details'>
-        <h2 className='project-title'>{title}</h2>
+        <h2 className='project-title'>{titleCase(title)}</h2>
         <p className='project-desc'>{description}</p>
       </div>
       <div className='project-links'>

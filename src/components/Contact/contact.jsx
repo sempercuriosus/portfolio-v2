@@ -26,8 +26,6 @@ function Contact() {
         [name]: value,
       };
 
-      // console.log(updatedData);
-
       return updatedData;
     });
   };
