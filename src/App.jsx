@@ -14,9 +14,9 @@ function App() {
       {/* Header also adds the nav */}
       <Header />
 
-      {/* Index is responsible for rendering the content for each page rendered */}
+      {/* rendering the main content element now, and the index is responsible for section element */}
       <main>
-        {/* rendering the main content element now, and the index is responsible for section element */}
+        {/* Index is responsible for rendering the content for each page rendered */}
         <Index />
       </main>
 
