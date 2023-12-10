@@ -18,7 +18,7 @@ function Footer() {
       </p>
       <p>
         I occasionally post to my <a href={links.blog}>blog</a>, so please check
-        out the post, if you like. This is very new, but I would still like to
+        out the posts, if you like. This is very new, but I would still like to
         share.
       </p>
     </footer>
