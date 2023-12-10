@@ -1,3 +1,5 @@
+const devPicPath = '/src/assets/images/eric_developer_pic.jpeg';
+
 function About() {
   document.title = 'About | Third Coast 🦡';
 
@@ -5,7 +7,7 @@ function About() {
     <section id='about'>
       <div id='dev-photo'>
         <img
-          src='../../../Assets/images/eric_developer_pic.jpeg'
+          src={devPicPath}
           alt='Developer Profile Image'
         />
       </div>
