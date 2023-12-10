@@ -74,8 +74,6 @@ function Portfolio() {
     },
   ]);
 
-  // console.log('Render Projects', featuredProjects);
-
   return (
     <section id='projects'>
       {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
