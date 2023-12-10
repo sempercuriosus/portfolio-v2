@@ -1,6 +1,10 @@
 function Resume() {
   document.title = 'Resume | Third Coast 🦡';
-  return <p>Resume display test</p>;
+  return (
+    <section id='resume'>
+      <p>here it is</p>
+    </section>
+  );
 }
 
 export default Resume;
