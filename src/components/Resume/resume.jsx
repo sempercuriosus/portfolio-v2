@@ -1,4 +1,4 @@
-import ResumePlaceholder from '../../assets/resume/eric-hulse-placeholder.pdf';
+import ResumePlaceholder from '/src/assets/resume/eric-hulse-placeholder.pdf';
 
 const liveResume = ResumePlaceholder;
 const downloadName = 'Eric-Hulse-Resume2023Dec';
