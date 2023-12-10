@@ -7,8 +7,8 @@ function Header() {
   return (
     <header>
       <p>{developerName} </p>
-      <p>{welcomeMessage} </p>
       <Nav />
+      <p>{welcomeMessage} </p>
     </header>
   );
 }

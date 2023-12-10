@@ -1,11 +1,7 @@
 import { Outlet } from 'react-router-dom';
 
 function Index() {
-  return (
-    <main>
-      <Outlet />
-    </main>
-  );
+  return <Outlet />;
 }
 
 export default Index;
