@@ -4,12 +4,8 @@ const developerName = 'Eric Hulse';
 
 function Header() {
   return (
-    <header>
-      <div>
-        <Nav developerName={developerName} />
-      </div>
-      <br />
-      <br />
+    <header className='block'>
+      <Nav developerName={developerName} />
     </header>
   );
 }

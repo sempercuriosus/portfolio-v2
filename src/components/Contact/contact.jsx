@@ -34,7 +34,6 @@ function Contact() {
     <section
       id='contact'
       className='container'>
-      <br />
       <p>
         I do not use social media, but you can send me a message. It may be a
         day or two for me to return.
@@ -48,10 +47,8 @@ function Contact() {
           defaultValue={formData.name}
           // onChange={setFormValue}
           onBlur={setFormValue}
-          className='input'
+          className='input block'
         />{' '}
-        <br />
-        <br />
         <label className='label'>Email: </label>
         <input
           name='email'
@@ -60,10 +57,8 @@ function Contact() {
           defaultValue={formData.email}
           // onChange={setFormValue}
           onBlur={setFormValue}
-          className='input'
+          className='input block'
         />
-        <br />
-        <br />
         <label className='label'>Message: </label>
         <textarea
           rows={3}
@@ -74,10 +69,8 @@ function Contact() {
           defaultValue={formData.message}
           // onChange={setFormValue}
           onBlur={setFormValue}
-          className='textarea'
+          className='textarea block'
         />
-        <br />
-        <br />
         <button
           className='button is-success is-outlined is-medium'
           type='submit'>

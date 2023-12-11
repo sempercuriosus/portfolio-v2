@@ -11,7 +11,7 @@ function Resume() {
       className='container'>
       <div
         id='experience'
-        className='content'>
+        className='content block'>
         <h2
           id='experience-title'
           className='subtitle'>
@@ -39,7 +39,7 @@ function Resume() {
 
       <div
         id='other-experience '
-        className='content'>
+        className='content block'>
         <h2
           id='other-title'
           className='subtitle'>
@@ -80,8 +80,6 @@ function Resume() {
           download={downloadName}
           target='_blank'
           rel='noopener noreferrer'>
-          <br />
-
           <button className='button is-info'>Download My Resume</button>
         </a>
       </div>
