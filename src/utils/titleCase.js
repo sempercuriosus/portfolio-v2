@@ -11,8 +11,6 @@ const titleCase = (title) => {
         return '';
     }
 
-    console.log(title);
-
     const newTitle = title.split(' ').map((item) => {
         return item.charAt(0).toUpperCase() + item.slice(1);
     });
