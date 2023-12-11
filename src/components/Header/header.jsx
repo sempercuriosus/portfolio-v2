@@ -1,7 +1,6 @@
 import Nav from '../Nav/nav';
 
 const developerName = 'Eric Hulse';
-const welcomeMessage = 'Hello! Welcome to my portfolio.';
 
 function Header() {
   return (
@@ -10,7 +9,6 @@ function Header() {
         <Nav developerName={developerName} />
       </div>
       <br />
-      <p className='title container'>{welcomeMessage} </p>
       <br />
     </header>
   );

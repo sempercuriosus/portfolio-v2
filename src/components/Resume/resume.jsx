@@ -6,9 +6,18 @@ const downloadName = 'Eric-Hulse-Resume2023Dec';
 function Resume() {
   document.title = 'Resume | Third Coast 🦡';
   return (
-    <section id='resume'>
-      <div id='experience'>
-        <h2 id='experience-title'>Tech Stack</h2>
+    <section
+      id='resume'
+      className='container'>
+      <h2
+        id='experience-title'
+        className='subtitle is-5'>
+        Tech Stack
+      </h2>
+
+      <div
+        id='experience'
+        className='section  tile is-child notification'>
         <ul id='experience-list'>
           <li>Javascript</li>
           <li>Express</li>
@@ -21,8 +30,15 @@ function Resume() {
         </ul>
       </div>
 
-      <div id='other-experience'>
-        <h2 id='other-title'>Other Projects</h2>
+      <h2
+        id='other-title'
+        className='subtitle is-5'>
+        Other Projects
+      </h2>
+
+      <div
+        id='other-experience '
+        className='section  tile is-child notification'>
         <p id='other-title-pi'>
           Recently, I have been learning some about Rasperry Pi. Here are my
           projects:
@@ -47,7 +63,7 @@ function Resume() {
           download={downloadName}
           target='_blank'
           rel='noopener noreferrer'>
-          <button>Download My Resume</button>
+          <button className='button is-info'>Download My Resume</button>
         </a>
       </div>
     </section>
