@@ -88,12 +88,13 @@ function Portfolio() {
 
   return (
     <Fragment>
-      <section className='container'>
+      <section className='container notification is-dark'>
         <div
           id='projects'
           className='columns is-multiline container'>
           {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
           {featuredProjects.map((singleProject) => (
+            // Map over all the projects above to create project cards
             <Project
               key={singleProject.projectCode}
               project={singleProject}
