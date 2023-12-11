@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './style/index.css';
+import 'bulma/css/bulma.min.css';
+// import './style/index.css';
 
 // Pages
 import App from './App.jsx';
