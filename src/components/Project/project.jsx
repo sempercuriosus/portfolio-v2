@@ -53,7 +53,9 @@ function Projects({ project }) {
           {/* Deployed Link */}
           {deployedLink && (
             <div className='block'>
-              <a href={deployedLink}>Deployed Application</a>
+              <a href={deployedLink}>
+                <strong>Deployed Application</strong>
+              </a>
             </div>
           )}
         </div>
