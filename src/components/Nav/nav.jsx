@@ -11,16 +11,11 @@ function Nav({ developerName }) {
       role='navigation'
       aria-label='main navigation'>
       {/* About is the root route, href reflects this */}
-      <div
-        id='dev-name'
-        className='navbar-item'>
-        {name}
-      </div>
-
-      <div
-        id='name-div'
-        className='navbar-item'>
-        |
+      <div className='navbar-item'>
+        <div id='dev-name'>{name}</div>
+        <div id='name-div'>
+          <em>|</em>
+        </div>
       </div>
 
       <Link

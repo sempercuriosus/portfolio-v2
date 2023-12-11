@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import Project from '../Project/project.jsx';
 
 // The Portfolio is a COLLECTION of many various Projects I am featuring
@@ -18,6 +18,7 @@ function Portfolio() {
   
   template
   {
+    featuredProject: false,
     projectCode: '',
     title: '',
     description: '',
@@ -30,6 +31,7 @@ function Portfolio() {
 
   const [featuredProjects] = useState([
     {
+      featuredProject: true,
       projectCode: 'dyfab',
       title: "don't you forget about me",
       description:
@@ -38,6 +40,7 @@ function Portfolio() {
       deployedLink: '',
     },
     {
+      featuredProject: false,
       projectCode: 'shws',
       title: 'study hacks blog web scrape',
       description:
@@ -46,6 +49,7 @@ function Portfolio() {
       deployedLink: '',
     },
     {
+      featuredProject: false,
       projectCode: 'doom',
       title: 'dooms date algorithm',
       description:
@@ -54,6 +58,7 @@ function Portfolio() {
       deployedLink: '',
     },
     {
+      featuredProject: false,
       projectCode: 'fittr',
       title: 'fitness tracker',
       description:
@@ -62,6 +67,7 @@ function Portfolio() {
       deployedLink: 'https://vonjareew.github.io/FitnessTracker/',
     },
     {
+      featuredProject: false,
       projectCode: 'tool',
       title: 'tool rental application',
       description:
@@ -70,25 +76,32 @@ function Portfolio() {
       deployedLink:
         'https://rocky-journey-83321-4f006da2de0c.herokuapp.com/login',
     },
-    {
-      projectCode: 'readme',
-      title: 'readme helper',
-      description: '',
-      codeRepo: '',
-      deployedLink: '',
-    },
+    // {
+    // featuredProject: false,
+    // projectCode: 'readme',
+    //   title: 'readme helper',
+    //   description: '',
+    //   codeRepo: '',
+    //   deployedLink: '',
+    // },
   ]);
 
   return (
-    <section id='projects'>
-      {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
-      {featuredProjects.map((singleProject) => (
-        <Project
-          key={singleProject.projectCode}
-          project={singleProject}
-        />
-      ))}
-    </section>
+    <Fragment>
+      <section className='container'>
+        <div
+          id='projects'
+          className='columns is-multiline container'>
+          {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
+          {featuredProjects.map((singleProject) => (
+            <Project
+              key={singleProject.projectCode}
+              project={singleProject}
+            />
+          ))}
+        </div>
+      </section>
+    </Fragment>
   );
 }
 
