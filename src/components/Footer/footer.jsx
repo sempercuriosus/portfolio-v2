@@ -17,7 +17,7 @@ function Footer() {
             Checkout my GitHub <a href={links.github}>landing page</a> and see
             what I am up to.
           </p>
-
+          <br />
           <p>
             I occasionally post to my <a href={links.blog}>blog</a>, so please
             check out the posts, if you like. This is very new, but I would
