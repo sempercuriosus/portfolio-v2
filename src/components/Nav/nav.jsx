@@ -18,7 +18,7 @@ function Nav({ developerName }) {
       </div>
 
       <div
-        id='nav-divider'
+        id='name-div'
         className='navbar-item'>
         |
       </div>
