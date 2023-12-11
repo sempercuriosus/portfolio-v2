@@ -23,7 +23,7 @@ function Projects({ project }) {
         // if the project is featured doing full width
         className={
           featuredProject
-            ? classList + ' notification is-info column is-full'
+            ? classList + ' notification is-primary column is-full'
             : ' notification is-light column is-5'
         }>
         {/* Project */}
@@ -44,7 +44,9 @@ function Projects({ project }) {
         <div id='project-links'>
           {codeRepo && (
             <div className='block'>
-              <a href={codeRepo}>Code Repository</a>
+              <a href={codeRepo}>
+                <strong>Code Repository</strong>
+              </a>
             </div>
           )}
 

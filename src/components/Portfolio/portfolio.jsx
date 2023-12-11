@@ -88,7 +88,7 @@ function Portfolio() {
 
   return (
     <Fragment>
-      <section className='container'>
+      <section className='container notification is-dark'>
         <div
           id='projects'
           className='columns is-multiline container'>
