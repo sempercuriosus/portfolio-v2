@@ -1,4 +1,4 @@
-import React from 'react';
+import { Fragment } from 'react';
 import titleCase from '../../utils/titleCase';
 
 // A Project represents a single piece of work
@@ -16,7 +16,7 @@ function Projects({ project }) {
   const { title, description, codeRepo, deployedLink } = project || emptyObj;
 
   return (
-    <React.Fragment>
+    <Fragment>
       <div className='project-details'>
         <h2 className='project-title'>{titleCase(title)}</h2>
         <p className='project-desc'>{description}</p>
@@ -26,7 +26,7 @@ function Projects({ project }) {
 
         {deployedLink && <a href={deployedLink}>Deployed Application</a>}
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 }
 
