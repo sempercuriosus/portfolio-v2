@@ -23,7 +23,7 @@ function Projects({ project }) {
         // if the project is featured doing full width
         className={
           featuredProject
-            ? classList + ' notification is-primary column is-full'
+            ? classList + ' notification is-warning column is-full'
             : ' notification is-light column is-5'
         }>
         {/* Project */}
