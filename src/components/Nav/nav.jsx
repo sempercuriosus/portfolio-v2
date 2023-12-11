@@ -6,28 +6,43 @@ function Nav({ developerName }) {
 
   return (
     <nav
-      className='navbar is-info is-spaced'
+      id='nav-nav'
+      className='navbar is-spaced'
       role='navigation'
       aria-label='main navigation'>
       {/* About is the root route, href reflects this */}
-      <div className='navbar-item'>{name}</div>
-      <hr className='navbar-divider'></hr>
+      <div
+        id='dev-name'
+        className='navbar-item'>
+        {name}
+      </div>
+
+      <div
+        id='nav-divider'
+        className='navbar-item'>
+        |
+      </div>
+
       <Link
+        id='link-about'
         to='/'
         className='navbar-item'>
         <strong>About</strong>
       </Link>
       <Link
+        id='link-portfolio'
         to='/Portfolio'
         className='navbar-item'>
         <strong>Portfolio</strong>
       </Link>
       <Link
+        id='link-resume'
         to='/Resume'
         className='navbar-item'>
         <strong>Resume</strong>
       </Link>
       <Link
+        id='link-contact'
         to='/Contact'
         className='navbar-item is-light'>
         <strong>Contact</strong>
