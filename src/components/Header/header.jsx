@@ -6,9 +6,12 @@ const welcomeMessage = 'Hello! Welcome to my portfolio.';
 function Header() {
   return (
     <header>
-      <p>{developerName} </p>
-      <Nav />
-      <p>{welcomeMessage} </p>
+      <div>
+        <Nav developerName={developerName} />
+      </div>
+      <br />
+      <p className='title container'>{welcomeMessage} </p>
+      <br />
     </header>
   );
 }
