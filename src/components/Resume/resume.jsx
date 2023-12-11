@@ -1,3 +1,4 @@
+// Link to Resume (changes based on version)
 import ResumePlaceholder from '/src/assets/resume/eric-hulse-placeholder.pdf';
 
 const liveResume = ResumePlaceholder;
@@ -10,20 +11,27 @@ function Resume() {
       id='resume'
       className='container notification is-dark'>
       <div className='container  notification is-light'>
+        {/* Experience */}
+
         <div
           id='experience'
           className='content block'>
+          {/* Experience Title */}
+
+          {/* Tech Stack List */}
           <h2
             id='experience-title'
             className='subtitle'>
             <strong>Tech Stack</strong>
           </h2>
 
+          {/* Blurb */}
           <p>
             This is what I have experience in, there is no particular order to
             it, and I am always willing to add to it.{' '}
           </p>
 
+          {/* Experience List */}
           <ul
             id='experience-list'
             className='content'>
@@ -38,6 +46,7 @@ function Resume() {
           </ul>
         </div>
 
+        {/* Random Tech Stuff */}
         <div
           id='other-experience '
           className='content block'>
@@ -52,6 +61,7 @@ function Resume() {
             projects:
           </p>
 
+          {/* Random Tech List */}
           <ul id='other-list-pi'>
             <li>Pi Hole</li>
             <li>Retro Pi</li>
@@ -62,6 +72,7 @@ function Resume() {
           </ul>
         </div>
 
+        {/* Download Resume */}
         <div
           id='resume-download'
           className='content'>
@@ -75,6 +86,7 @@ function Resume() {
             My resume is available as downloadable PDF and can be found below.
           </p>
 
+          {/* Resume Link */}
           <a
             id='resume-link'
             href={liveResume}

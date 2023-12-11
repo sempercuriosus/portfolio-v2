@@ -11,6 +11,7 @@ function About() {
         <div className='container  notification is-light'>
           <p className='title block'>{welcomeMessage} </p>
 
+          {/* About */}
           <div
             id='about'
             className='container columns'>
@@ -26,8 +27,6 @@ function About() {
             </aside>
 
             <div className='column is-four-fifths '>
-              {/* About */}
-
               <div className='content'>
                 {/* Title  */}
 
