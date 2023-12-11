@@ -14,27 +14,27 @@ function Projects({ project }) {
     deployedLink: '',
   };
 
-  const { title, description, codeRepo, deployedLink } = project || emptyObj;
+  const { title, description, codeRepo, deployedLink, featuredProject } =
+    project || emptyObj;
+
+  const featuredTitle = featuredProject ? title + ' ⭐' : title;
 
   return (
     <Fragment>
       {/* Project Details*/}
 
-      <div
-        id='project-details'
-        className='content'>
+      <div id='project-details'>
         {/* TITLE */}
-        <h2 id='project-title'>
-          <strong>{titleCase(title)}</strong>
+        <h2
+          id='project-title'
+          className='title is-5'>
+          <strong>{titleCase(featuredTitle ? featuredTitle : title)}</strong>
         </h2>
 
         {/* Description */}
-        <p
-          id='project-desc'
-          className='container'>
-          {description}
-        </p>
+        <p id='project-desc'>{description}</p>
       </div>
+      <br />
 
       {/* Repo Link */}
       <div
@@ -43,17 +43,16 @@ function Projects({ project }) {
         {codeRepo && (
           <button
             onClick={() => window.open(codeRepo, '_blank')}
-            className='block button is-dark'>
-            <strong>Code Repository</strong>
+            className='block button has-background-dark'>
+            <strong className='has-text-light'>Code Repository</strong>
           </button>
         )}
-        <br />
 
         {/* Deployed Link */}
         {deployedLink && (
           <button
             onClick={() => window.open(deployedLink, '_blank')}
-            className='block button is-info'>
+            className='block button is-info has-background-info-dark'>
             <strong>Deployed Application</strong>
           </button>
         )}

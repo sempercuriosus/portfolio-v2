@@ -63,7 +63,7 @@ function Portfolio() {
       title: 'fitness tracker',
       description:
         'This was our first group project, and I was in a Developer role. I am  responsible for the HTML after the initial framework, CSS for layout to make the application mobile friendly, and Javascript General Functionality and Exercise API integration.',
-      codeRepo: 'https://github.com/sempercuriosus/FitnessTracker',
+      codeRepo: 'https://github.com/vonjareew/FitnessTracker',
       deployedLink: 'https://vonjareew.github.io/FitnessTracker/',
     },
     {
@@ -108,10 +108,11 @@ function Portfolio() {
               // Rendering the column here
               <section
                 key={singleProject.projectCode}
+                // If the project is featured, then use the applying color and ⭐ (in project)
                 className={
                   singleProject.featuredProject
-                    ? 'container column is-11 notification is-primary is-light'
-                    : 'container column is-5 notification is-light'
+                    ? 'container content notification column is-11 block is-primary has-background-primary-dark has-text-black-bis'
+                    : 'container column is-5 notification has-background-grey-lighter has-text-black-bis'
                 }>
                 <Project project={singleProject} />
               </section>

@@ -8,10 +8,10 @@ function About() {
 
   return (
     <Fragment>
-      <section className='container  notification is-dark'>
-        <h1 className='title'>ABOUT</h1>
+      <section className='container notification has-background-dark'>
+        <h1 className='title has-text-light'>ABOUT</h1>
         <hr />
-        <div className='container  notification is-light'>
+        <div className='container notification has-background-light'>
           <p className='title block'>{welcomeMessage} </p>
 
           {/* About */}

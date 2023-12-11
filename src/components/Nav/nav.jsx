@@ -6,12 +6,12 @@ function Nav({ developerName }) {
     // Main Nav Group
     <nav
       id='nav-nav'
-      className='navbar has-shadow is-spaced'
+      className='navbar is-spaced has-background-dark'
       role='navigation'>
       {/* About is the root route, href reflects this */}
       <div
         id='dev-name'
-        className='navbar-item notification is-dark'>
+        className='navbar-item has-background-dark'>
         {developerName} <em id='name-div'>|</em>
       </div>
 
@@ -21,7 +21,7 @@ function Nav({ developerName }) {
       <Link
         id='link-about'
         to='/'
-        className='navbar-item'>
+        className='navbar-item has-text-light'>
         <strong>ABOUT</strong>
       </Link>
 
@@ -29,7 +29,7 @@ function Nav({ developerName }) {
       <Link
         id='link-portfolio'
         to='/Portfolio'
-        className='navbar-item'>
+        className='navbar-item has-text-light'>
         <strong>PORTFOLIO</strong>
       </Link>
 
@@ -37,7 +37,7 @@ function Nav({ developerName }) {
       <Link
         id='link-resume'
         to='/Resume'
-        className='navbar-item'>
+        className='navbar-item has-text-light'>
         <strong>RESUME</strong>
       </Link>
 
@@ -45,7 +45,7 @@ function Nav({ developerName }) {
       <Link
         id='link-contact'
         to='/Contact'
-        className='navbar-item'>
+        className='navbar-item has-text-light'>
         <strong>CONTACT</strong>
       </Link>
     </nav>

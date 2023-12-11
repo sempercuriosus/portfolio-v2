@@ -11,8 +11,8 @@ function Resume() {
     <Fragment>
       <section
         id='resume'
-        className='container notification is-dark'>
-        <h1 className='title'>RESUME</h1>
+        className='container notification has-background-dark'>
+        <h1 className='title has-text-light'>RESUME</h1>
         <hr />
         <br />
         <div className='container  notification is-light'>
