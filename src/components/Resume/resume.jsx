@@ -6,10 +6,26 @@ const downloadName = 'Eric-Hulse-Resume2023Dec';
 function Resume() {
   document.title = 'Resume | Third Coast 🦡';
   return (
-    <section id='resume'>
-      <div id='experience'>
-        <h2 id='experience-title'>Tech Stack</h2>
-        <ul id='experience-list'>
+    <section
+      id='resume'
+      className='container'>
+      <div
+        id='experience'
+        className='content block'>
+        <h2
+          id='experience-title'
+          className='subtitle'>
+          <strong>Tech Stack</strong>
+        </h2>
+
+        <p>
+          This is what I have experience in, there is no particular order to it,
+          and I am always willing to add to it.{' '}
+        </p>
+
+        <ul
+          id='experience-list'
+          className='content'>
           <li>Javascript</li>
           <li>Express</li>
           <li>Node</li>
@@ -21,12 +37,20 @@ function Resume() {
         </ul>
       </div>
 
-      <div id='other-experience'>
-        <h2 id='other-title'>Other Projects</h2>
+      <div
+        id='other-experience '
+        className='content block'>
+        <h2
+          id='other-title'
+          className='subtitle'>
+          <strong>Other Projects</strong>
+        </h2>
+
         <p id='other-title-pi'>
           Recently, I have been learning some about Rasperry Pi. Here are my
           projects:
         </p>
+
         <ul id='other-list-pi'>
           <li>Pi Hole</li>
           <li>Retro Pi</li>
@@ -37,17 +61,26 @@ function Resume() {
         </ul>
       </div>
 
-      <div id='resume-download'>
+      <div
+        id='resume-download'
+        className='content'>
+        <h2
+          id='other-title'
+          className='subtitle'>
+          <strong>Resume</strong>
+        </h2>
+
         <p>
           My resume is available as downloadable PDF and can be found below.
         </p>
+
         <a
           id='resume-link'
           href={liveResume}
           download={downloadName}
           target='_blank'
           rel='noopener noreferrer'>
-          <button>Download My Resume</button>
+          <button className='button is-info'>Download My Resume</button>
         </a>
       </div>
     </section>

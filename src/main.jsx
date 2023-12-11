@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './style/index.css';
 
 // Pages
 import App from './App.jsx';
@@ -16,6 +15,8 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    // When there is an error then Error is essentially the "element"
+    //  meaning, I need to also set the header, error, and footer
     errorElement: <Error />,
     children: [
       {
