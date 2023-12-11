@@ -1,13 +1,14 @@
 #dev-name {
     color: orange;
     margin-right: 1em;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     letter-spacing: .3em;
 }
 
 #name-div {
     font-weight: bolder;
+    font-size: xx-large;
 }
 
 .navbar-item strong {
@@ -20,4 +21,17 @@
 
 #nav-nav {
     color: red;
+}
+
+@media screen and (max-width: 810px) {
+
+    .navbar-link,
+    .navbar-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
 }

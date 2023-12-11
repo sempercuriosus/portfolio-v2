@@ -13,19 +13,53 @@ function Projects({ project }) {
     codeRepo: '',
     deployedLink: '',
   };
-  const { title, description, codeRepo, deployedLink } = project || emptyObj;
+  const { title, description, codeRepo, deployedLink, featuredProject } =
+    project || emptyObj;
+  const classList = '';
 
   return (
     <Fragment>
-      <div className='project-details'>
-        <h2 className='project-title'>{titleCase(title)}</h2>
-        <p className='project-desc'>{description}</p>
-      </div>
-      <div className='project-links'>
-        {codeRepo && <a href={codeRepo}>Code Repository</a>}
+      <section
+        // if the project is featured doing full width
+        className={
+          featuredProject
+            ? classList +
+              'container notification is-info column is-three-quarters'
+            : ' notification is-light column is-5'
+        }>
+        {/* Project */}
 
-        {deployedLink && <a href={deployedLink}>Deployed Application</a>}
-      </div>
+        <div
+          id='project-details'
+          className='content'>
+          {/* TITLE */}
+          <h2 id='project-title'>
+            <strong>{titleCase(title)}</strong>
+          </h2>
+
+          {/* Description */}
+          <p id='project-desc'>{description}</p>
+        </div>
+
+        {/* Repo Link */}
+        <div id='project-links'>
+          {codeRepo && (
+            <div className='block'>
+              <a href={codeRepo}>Code Repository</a>
+            </div>
+          )}
+
+          {/* Deployed Link */}
+          {deployedLink && (
+            <div className='block'>
+              <a href={deployedLink}>Deployed Application</a>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Empty Column  */}
+      <div className='column is-one'></div>
     </Fragment>
   );
 }
