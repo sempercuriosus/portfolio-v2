@@ -34,6 +34,8 @@ function Contact() {
     <section
       id='contact'
       className='container notification is-dark'>
+      <h1 className='title'>CONTACT</h1>
+      <hr />
       <div className='container  notification is-light'>
         {/*
          Form Title

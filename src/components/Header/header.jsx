@@ -1,6 +1,6 @@
 import Nav from '../Nav/nav';
 
-const developerName = 'Eric Hulse';
+const developerName = 'Eric Hulse'.toUpperCase();
 
 function Header() {
   return (

@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
 function Nav({ developerName }) {
-  const name = developerName;
-
   return (
     // Main Nav Group
     <nav
@@ -14,7 +12,7 @@ function Nav({ developerName }) {
       <div
         id='dev-name'
         className='navbar-item notification is-dark'>
-        {name} <em id='name-div'>|</em>
+        {developerName} <em id='name-div'>|</em>
       </div>
 
       {/* Links */}
@@ -24,7 +22,7 @@ function Nav({ developerName }) {
         id='link-about'
         to='/'
         className='navbar-item'>
-        <strong>About</strong>
+        <strong>ABOUT</strong>
       </Link>
 
       {/* Portfolio */}
@@ -32,7 +30,7 @@ function Nav({ developerName }) {
         id='link-portfolio'
         to='/Portfolio'
         className='navbar-item'>
-        <strong>Portfolio</strong>
+        <strong>PORTFOLIO</strong>
       </Link>
 
       {/* Resume */}
@@ -40,7 +38,7 @@ function Nav({ developerName }) {
         id='link-resume'
         to='/Resume'
         className='navbar-item'>
-        <strong>Resume</strong>
+        <strong>RESUME</strong>
       </Link>
 
       {/* Contact */}
@@ -48,7 +46,7 @@ function Nav({ developerName }) {
         id='link-contact'
         to='/Contact'
         className='navbar-item'>
-        <strong>Contact</strong>
+        <strong>CONTACT</strong>
       </Link>
     </nav>
   );
