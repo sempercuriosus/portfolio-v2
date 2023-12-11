@@ -1,0 +1,23 @@
+#dev-name {
+    color: orange;
+    margin-right: 1em;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: .3em;
+}
+
+#name-div {
+    font-weight: bolder;
+}
+
+.navbar-item strong {
+    letter-spacing: .05em;
+}
+
+.navbar-item {
+    margin-right: 1em;
+}
+
+#nav-nav {
+    color: red;
+}
