@@ -14,13 +14,7 @@ function Nav({ developerName }) {
       <div
         id='dev-name'
         className='navbar-item'>
-        {name}
-      </div>
-
-      <div
-        id='name-div'
-        className='navbar-item'>
-        |
+        {name} <em>|</em>
       </div>
 
       <Link
