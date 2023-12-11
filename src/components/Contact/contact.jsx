@@ -4,8 +4,7 @@ function Contact() {
   document.title = 'Contact | Third Coast 🦡';
 
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
     message: '',
   });
@@ -32,29 +31,28 @@ function Contact() {
 
   // Input Form
   return (
-    <section id='contact'>
-      <form>
-        <label>First Name: </label>
+    <section
+      id='contact'
+      className='container'>
+      <br />
+      <p>
+        I do not use social media, but you can send me a message. It may be a
+        day or two for me to return.
+      </p>
+      <form className='section'>
+        <label className='label'>Name: </label>
         <input
-          name='firstName'
-          placeholder='First Name'
+          name='name'
+          placeholder='Bill F. Murray'
           type='text'
-          defaultValue={formData.firstName}
+          defaultValue={formData.name}
           // onChange={setFormValue}
           onBlur={setFormValue}
+          className='input'
         />{' '}
         <br />
-        <label>Last Name: </label>
-        <input
-          name='lastName'
-          placeholder='Last Name'
-          type='text'
-          defaultValue={formData.lastName}
-          // onChange={setFormValue}
-          onBlur={setFormValue}
-        />
         <br />
-        <label>Email: </label>
+        <label className='label'>Email: </label>
         <input
           name='email'
           placeholder='email@email.com'
@@ -62,9 +60,11 @@ function Contact() {
           defaultValue={formData.email}
           // onChange={setFormValue}
           onBlur={setFormValue}
+          className='input'
         />
         <br />
-        <label>Message: </label>
+        <br />
+        <label className='label'>Message: </label>
         <textarea
           rows={3}
           cols={33}
@@ -74,9 +74,15 @@ function Contact() {
           defaultValue={formData.message}
           // onChange={setFormValue}
           onBlur={setFormValue}
+          className='textarea'
         />
         <br />
-        <button type='submit'>Send it!</button>
+        <br />
+        <button
+          className='button is-success is-outlined is-medium'
+          type='submit'>
+          <strong>Send it!</strong>
+        </button>
       </form>
     </section>
   );
