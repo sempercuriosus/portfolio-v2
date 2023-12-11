@@ -89,17 +89,30 @@ function Portfolio() {
   return (
     <Fragment>
       <section className='container notification is-dark'>
+        <h1 className='title'>Projects</h1>
+        <hr />
+        <br />
         <div
           id='projects'
-          className='columns is-multiline container'>
+          className='columns is-multiline'>
           {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
-          {featuredProjects.map((singleProject) => (
-            // Map over all the projects above to create project cards
-            <Project
-              key={singleProject.projectCode}
-              project={singleProject}
-            />
-          ))}
+
+          {/* Map over all the projects above to create project cards */}
+          {featuredProjects.map((singleProject) => {
+            return (
+              // eslint-disable-next-line react/jsx-key
+              // Rendering the column here
+              <section
+                key={singleProject.projectCode}
+                className={
+                  singleProject.featuredProject
+                    ? 'container column is-four-fifths notification is-primary is-light'
+                    : 'container column is-5 notification is-light'
+                }>
+                <Project project={singleProject} />
+              </section>
+            );
+          })}
         </div>
       </section>
     </Fragment>
