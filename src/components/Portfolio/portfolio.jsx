@@ -89,7 +89,7 @@ function Portfolio() {
   return (
     <Fragment>
       <section className='container notification is-dark'>
-        <h1 className='title'>Projects</h1>
+        <h1 className='title'>PROJECTS</h1>
         <hr />
         <br />
         <div
