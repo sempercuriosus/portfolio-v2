@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
+import titleCase from '../../utils/titleCase';
 const devPicPath = '/src/assets/images/eric_developer_pic.jpeg';
-const welcomeMessage = 'Welcome to my portfolio.';
+const welcomeMessage = titleCase('Welcome to my portfolio.');
 
 function About() {
   document.title = 'About | Third Coast 🦡';
@@ -41,8 +42,8 @@ function About() {
 
                 <p>
                   I genuinely enjoy learning. That is why I picked the username{' '}
-                  <strong>Semper Curiosus</strong> for my github account. I am
-                  always curious about things around me trying to understand the{' '}
+                  <strong>Semper Curiosus</strong> for my username. I am always
+                  curious about things around me trying to understand the{' '}
                   <em>why</em> behind those things.
                 </p>
               </div>
