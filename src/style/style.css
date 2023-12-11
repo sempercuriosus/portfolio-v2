@@ -1,6 +1,6 @@
 #dev-name {
     color: darkorange;
-    margin-right: 1em;
+    margin-right: 0.5em;
     padding: 0.4em;
     font-size: large;
     font-weight: bold;
@@ -8,25 +8,21 @@
 }
 
 #name-div {
+    margin-right: 0.4em;
     color: white;
     font-weight: bolder;
     font-size: xx-large;
 }
 
 #nav-nav {
-    color: darkorange;
+    color: white;
 }
 
 .navbar-item strong {
-    letter-spacing: .05em;
+    letter-spacing: .06em;
 }
 
-.navbar-item {
-    text-decoration: none;
-    margin-right: 1em;
-}
-
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 410px) {
 
     .navbar-link,
     .navbar-item {

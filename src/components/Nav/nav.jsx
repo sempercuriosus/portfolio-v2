@@ -8,15 +8,13 @@ function Nav({ developerName }) {
     // Main Nav Group
     <nav
       id='nav-nav'
-      className='navbar is-spaced  notification is-dark'
-      role='navigation'
-      aria-label='main navigation'>
+      className='navbar has-shadow is-spaced'
+      role='navigation'>
       {/* About is the root route, href reflects this */}
-      <div className='navbar-item'>
-        <div id='dev-name'>{name}</div>
-        <div id='name-div'>
-          <em>|</em>
-        </div>
+      <div
+        id='dev-name'
+        className='navbar-item notification is-dark'>
+        {name} <em id='name-div'>|</em>
       </div>
 
       {/* Links */}
@@ -49,7 +47,7 @@ function Nav({ developerName }) {
       <Link
         id='link-contact'
         to='/Contact'
-        className='navbar-item is-light'>
+        className='navbar-item'>
         <strong>Contact</strong>
       </Link>
     </nav>
