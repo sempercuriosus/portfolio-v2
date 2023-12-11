@@ -1,4 +1,4 @@
-import React from 'react';
+import { Fragment } from 'react';
 import './style/App.css';
 import Header from './components/Header/header.jsx';
 
@@ -10,7 +10,7 @@ function App() {
     /* setting up the app structure */
   }
   return (
-    <React.Fragment>
+    <Fragment>
       {/* Header also adds the nav */}
       <Header />
 
@@ -21,7 +21,7 @@ function App() {
       </main>
 
       <Footer />
-    </React.Fragment>
+    </Fragment>
   );
 }
 
