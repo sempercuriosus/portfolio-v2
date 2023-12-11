@@ -15,7 +15,7 @@ function Projects({ project }) {
   };
   const { title, description, codeRepo, deployedLink, featuredProject } =
     project || emptyObj;
-  const classList = '';
+  const classList = 'container ';
 
   return (
     <Fragment>
@@ -23,8 +23,7 @@ function Projects({ project }) {
         // if the project is featured doing full width
         className={
           featuredProject
-            ? classList +
-              'container notification is-info column is-three-quarters'
+            ? classList + ' notification is-info column is-full'
             : ' notification is-light column is-5'
         }>
         {/* Project */}
@@ -58,8 +57,8 @@ function Projects({ project }) {
         </div>
       </section>
 
-      {/* Empty Column  */}
-      <div className='column is-one'></div>
+      {/* Empty Column will render if the project is NOT featured*/}
+      {featuredProject ? '' : <div className='column is-one'></div>}
     </Fragment>
   );
 }
