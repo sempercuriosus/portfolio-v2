@@ -1,14 +1,17 @@
 import { Fragment } from 'react';
+import titleCase from '../../utils/titleCase';
 const devPicPath = '/src/assets/images/eric_developer_pic.jpeg';
-const welcomeMessage = 'Welcome to my portfolio.';
+const welcomeMessage = titleCase('Welcome to my portfolio.');
 
 function About() {
   document.title = 'About | Third Coast 🦡';
 
   return (
     <Fragment>
-      <section className='container  notification is-dark'>
-        <div className='container  notification is-light'>
+      <section className='container notification has-background-dark'>
+        <h1 className='title has-text-light'>ABOUT</h1>
+        <hr />
+        <div className='container notification has-background-light'>
           <p className='title block'>{welcomeMessage} </p>
 
           {/* About */}
@@ -28,14 +31,6 @@ function About() {
 
             <div className='column is-four-fifths '>
               <div className='content'>
-                {/* Title  */}
-
-                <h2
-                  id='blurb-title'
-                  className='title is-5'>
-                  About Me
-                </h2>
-
                 {/* Name */}
 
                 <p>
@@ -46,10 +41,17 @@ function About() {
                 {/* Blurb */}
 
                 <p>
-                  I genuinely enjoy learning. That is why I picked the username{' '}
-                  <strong>Semper Curiosus</strong> for my github account. I am
-                  always curious about things around me trying to understand the{' '}
-                  <em>why</em> behind those things.
+                  I genuinely love to learn. That is why I picked{' '}
+                  <strong>Semper Curiosus</strong> for my username. I am always
+                  curious about the things around me, and I try to understand
+                  the <em>why</em> behind those things. I am not afraid of
+                  trying, making mistakes, and getting started. I strive to do
+                  everything I do well, but I do not try to be perfect.
+                </p>
+                <p>
+                  I have a passion for technology that is enables people, is
+                  helpful, solves a problem, is not intrusive or demands
+                  attention, and makes life easier.
                 </p>
               </div>
 

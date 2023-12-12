@@ -13,56 +13,50 @@ function Projects({ project }) {
     codeRepo: '',
     deployedLink: '',
   };
+
   const { title, description, codeRepo, deployedLink, featuredProject } =
     project || emptyObj;
-  const classList = 'container ';
+
+  const featuredTitle = featuredProject ? title + ' ⭐' : title;
 
   return (
     <Fragment>
-      <section
-        // if the project is featured doing full width
-        className={
-          featuredProject
-            ? classList + ' notification is-warning column is-full'
-            : ' notification is-light column is-5'
-        }>
-        {/* Project */}
+      {/* Project Details*/}
 
-        <div
-          id='project-details'
-          className='content'>
-          {/* TITLE */}
-          <h2 id='project-title'>
-            <strong>{titleCase(title)}</strong>
-          </h2>
+      <div id='project-details'>
+        {/* TITLE */}
+        <h2
+          id='project-title'
+          className='title is-5'>
+          <strong>{titleCase(featuredTitle ? featuredTitle : title)}</strong>
+        </h2>
 
-          {/* Description */}
-          <p id='project-desc'>{description}</p>
-        </div>
+        {/* Description */}
+        <p id='project-desc'>{description}</p>
+      </div>
+      <br />
 
-        {/* Repo Link */}
-        <div id='project-links'>
-          {codeRepo && (
-            <div className='block'>
-              <a href={codeRepo}>
-                <strong>Code Repository</strong>
-              </a>
-            </div>
-          )}
+      {/* Repo Link */}
+      <div
+        id='project-links'
+        className='buttons block'>
+        {codeRepo && (
+          <button
+            onClick={() => window.open(codeRepo, '_blank')}
+            className='block button has-background-dark'>
+            <strong className='has-text-light'>Code Repository</strong>
+          </button>
+        )}
 
-          {/* Deployed Link */}
-          {deployedLink && (
-            <div className='block'>
-              <a href={deployedLink}>
-                <strong>Deployed Application</strong>
-              </a>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Empty Column will render if the project is NOT featured*/}
-      {featuredProject ? '' : <div className='column is-one'></div>}
+        {/* Deployed Link */}
+        {deployedLink && (
+          <button
+            onClick={() => window.open(deployedLink, '_blank')}
+            className='block button is-info has-background-info-dark'>
+            <strong>Deployed Application</strong>
+          </button>
+        )}
+      </div>
     </Fragment>
   );
 }

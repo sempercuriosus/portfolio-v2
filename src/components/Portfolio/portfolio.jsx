@@ -29,7 +29,7 @@ function Portfolio() {
   */
   }
 
-  const [featuredProjects] = useState([
+  const [projects] = useState([
     {
       featuredProject: true,
       projectCode: 'dyfab',
@@ -63,7 +63,7 @@ function Portfolio() {
       title: 'fitness tracker',
       description:
         'This was our first group project, and I was in a Developer role. I am  responsible for the HTML after the initial framework, CSS for layout to make the application mobile friendly, and Javascript General Functionality and Exercise API integration.',
-      codeRepo: 'https://github.com/sempercuriosus/FitnessTracker',
+      codeRepo: 'https://github.com/vonjareew/FitnessTracker',
       deployedLink: 'https://vonjareew.github.io/FitnessTracker/',
     },
     {
@@ -86,21 +86,40 @@ function Portfolio() {
     // },
   ]);
 
+  const featureStored = projects.sort((a, b) =>
+    a.featuredProject === b.featuredProject ? 0 : a.featuredProject ? -1 : 1,
+  );
+
   return (
     <Fragment>
       <section className='container notification is-dark'>
+        <h1 className='title'>PORTFOLIO</h1>
+        <hr />
+        <br />
         <div
           id='projects'
-          className='columns is-multiline container'>
+          className='columns is-multiline'>
           {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
-          {featuredProjects.map((singleProject) => (
-            // Map over all the projects above to create project cards
-            <Project
-              key={singleProject.projectCode}
-              project={singleProject}
-            />
-          ))}
+
+          {/* Map over all the projects above to create project cards */}
+          {featureStored.map((singleProject) => {
+            return (
+              // eslint-disable-next-line react/jsx-key
+              // Rendering the column here
+              <section
+                key={singleProject.projectCode}
+                // If the project is featured, then use the applying color and ⭐ (in project)
+                className={
+                  singleProject.featuredProject
+                    ? 'container content notification column is-11 block is-primary has-background-primary-dark has-text-black-bis'
+                    : 'container column is-5 notification has-background-grey-lighter has-text-black-bis'
+                }>
+                <Project project={singleProject} />
+              </section>
+            );
+          })}
         </div>
+        <br />
       </section>
     </Fragment>
   );

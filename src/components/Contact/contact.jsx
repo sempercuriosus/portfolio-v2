@@ -33,8 +33,10 @@ function Contact() {
   return (
     <section
       id='contact'
-      className='container notification is-dark'>
-      <div className='container  notification is-light'>
+      className='container notification has-background-dark'>
+      <h1 className='title has-text-light'>CONTACT</h1>
+      <hr />
+      <div className='container notification has-background-light'>
         {/*
          Form Title
           */}

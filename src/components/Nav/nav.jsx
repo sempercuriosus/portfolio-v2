@@ -2,19 +2,17 @@ import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
 function Nav({ developerName }) {
-  const name = developerName;
-
   return (
     // Main Nav Group
     <nav
       id='nav-nav'
-      className='navbar has-shadow is-spaced'
+      className='navbar is-spaced has-background-dark'
       role='navigation'>
       {/* About is the root route, href reflects this */}
       <div
         id='dev-name'
-        className='navbar-item notification is-dark'>
-        {name} <em id='name-div'>|</em>
+        className='navbar-item has-background-dark'>
+        {developerName} <em id='name-div'>|</em>
       </div>
 
       {/* Links */}
@@ -23,32 +21,32 @@ function Nav({ developerName }) {
       <Link
         id='link-about'
         to='/'
-        className='navbar-item'>
-        <strong>About</strong>
+        className='navbar-item has-text-light'>
+        <strong>ABOUT</strong>
       </Link>
 
       {/* Portfolio */}
       <Link
         id='link-portfolio'
         to='/Portfolio'
-        className='navbar-item'>
-        <strong>Portfolio</strong>
+        className='navbar-item has-text-light'>
+        <strong>PORTFOLIO</strong>
       </Link>
 
       {/* Resume */}
       <Link
         id='link-resume'
         to='/Resume'
-        className='navbar-item'>
-        <strong>Resume</strong>
+        className='navbar-item has-text-light'>
+        <strong>RESUME</strong>
       </Link>
 
       {/* Contact */}
       <Link
         id='link-contact'
         to='/Contact'
-        className='navbar-item'>
-        <strong>Contact</strong>
+        className='navbar-item has-text-light'>
+        <strong>CONTACT</strong>
       </Link>
     </nav>
   );
