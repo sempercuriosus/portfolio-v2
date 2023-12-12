@@ -41,10 +41,17 @@ function About() {
                 {/* Blurb */}
 
                 <p>
-                  I genuinely enjoy learning. That is why I picked the username{' '}
+                  I genuinely love to learn. That is why I picked{' '}
                   <strong>Semper Curiosus</strong> for my username. I am always
-                  curious about things around me trying to understand the{' '}
-                  <em>why</em> behind those things.
+                  curious about the things around me, and I try to understand
+                  the <em>why</em> behind those things. I am not afraid of
+                  trying, making mistakes, and getting started. I strive to do
+                  everything I do well, but I do not try to be perfect.
+                </p>
+                <p>
+                  I have a passion for technology that is enables people, is
+                  helpful, solves a problem, is not intrusive or demands
+                  attention, and makes life easier.
                 </p>
               </div>
 
