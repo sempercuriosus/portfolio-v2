@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import titleCase from '../../utils/titleCase';
-const devPicPath = '/eric-dev-pic-2.jpg';
+// import devPicPath from '/public/images/eric-dev-pic-2.jpg';
+// const devPicPath = '/eric-dev-pic-2.jpg';
 const welcomeMessage = titleCase('Welcome to my portfolio.');
 
 function About() {
@@ -22,7 +23,7 @@ function About() {
               id='dev-photo'
               className='column '>
               <img
-                src={devPicPath}
+                src={'/'}
                 alt='Developer Profile Image'
                 className='image has-ratio'
                 width='350'
@@ -43,8 +44,8 @@ function About() {
                 <p>
                   I have a genuine love for learning, which is why I chose the
                   username <strong>Semper Curiosus</strong>. My curiosity drives
-                  me to understand the reasons behind things, and I am always
-                  eager to explore the world around me.
+                  me to understand the reasons <em>behind</em> things, and I am
+                  always eager to explore the world around me.
                 </p>
                 <p>
                   I embrace the process of trying, making mistakes, and getting
