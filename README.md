@@ -14,7 +14,7 @@ This is a second take on my portfolio! I have update the code since progressing 
 
 The App Is Deployed In The Following Location
 
-- [Portfolio](https://main--clinquant-dieffenbachia-0ac6e1.netlify.app) I used Netlify to host.
+- [Portfolio](https://clinquant-dieffenbachia-0ac6e1.netlify.app) I used Netlify to host.
 
 ## Tuition Payments
 
