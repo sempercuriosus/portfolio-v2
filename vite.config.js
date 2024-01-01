@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [ react() ],
   build: {
-    manifest: true
+    manifest: true,
+    rollupOptions: {
+      external: [ 'src/assets/images/eric-dev-pic-2.JPG' ],
+    },
   }
 });
