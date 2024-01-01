@@ -17,12 +17,9 @@ function Footer() {
           </p>
 
           <p className='block'>
-            I occasionally post to my <a href={links.blog}>blog</a>, so please
-            check out the posts, if you like. This is very new, but I would
-            still like to share. I sometimes share{' '}
-            <a href={links.blog}>posts on my blog</a>, so feel free to check
-            them out if you are interested. It is a relatively new venture, but
-            I would love to share my thoughts with you.
+            I sometimes share <a href={links.blog}>posts on my blog</a>, so feel
+            free to check them out if you are interested. It is a relatively new
+            venture, but I would love to share my thoughts with you.
           </p>
         </div>
       </footer>
