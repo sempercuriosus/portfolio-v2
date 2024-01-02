@@ -2,12 +2,11 @@
 
 /**
  * @name extractFilename
- * @description takes the incoming path in and returns the filename that was included.
+ * @description accepts a filepath that must contain a file
  * @param {string} incomingPath
- * @returns
+ * @returns filename from the path passed in
  */
 const extractFilename = (incomingPath) => {
-  console.info('[ extractFilename ] : called');
   const pathArray = incomingPath.split('/');
   const arrayLength = pathArray.length - 1;
   const filename = pathArray[arrayLength];

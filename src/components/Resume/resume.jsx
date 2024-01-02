@@ -8,8 +8,6 @@ let resumeFilename = extractFilename(ResumePath);
 function Resume() {
   document.title = 'Resume | Third Coast 🦡';
 
-  console.log(resumeFilename);
-
   return (
     <Fragment>
       <section
@@ -82,8 +80,8 @@ function Resume() {
             </h2>
 
             <p id='other-title-pi'>
-              Recently, I have been learning some about Rasperry Pi. Here are my
-              projects:
+              Recently, I have been learning some about Rasperry Pi and I am
+              setting up a Homelab. Here are my projects:
             </p>
 
             {/* Random Tech List */}
@@ -92,7 +90,10 @@ function Resume() {
               <li>Retro Pi</li>
               <li>
                 I have setup a dedicated Pi as a server to deploy projects to
-                for a start to my Homelab
+              </li>
+              <li>
+                Converting my old computer to a NAS (I am just now starting
+                this, as of Jan 2024)
               </li>
             </ul>
           </div>
