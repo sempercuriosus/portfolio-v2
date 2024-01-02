@@ -37,17 +37,34 @@ function Resume() {
             </p>
 
             {/* Experience List */}
+            <h3>Backend</h3>
             <ul
               id='experience-list'
               className='content'>
-              <li>Javascript</li>
-              <li>Express</li>
-              <li>Node</li>
+              <li>Javascript, Node, Express</li>
               <li>Python</li>
               <li>C#</li>
+              <li>T-Sql, NoSql, MongoDB</li>
+            </ul>
+
+            <h3>Frontend</h3>
+            <ul>
               <li>React</li>
-              <li>T-Sql and NoSql</li>
-              <li>MongoDB</li>
+              <li>CSS</li>
+              <li>
+                <a
+                  href='https://bulma.io'
+                  target='blank'>
+                  Bulma CSS
+                </a>
+              </li>
+              <li>
+                <a
+                  href='https://getbootstrap.com'
+                  target='blank'>
+                  Bootstrap CSS
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -71,8 +88,8 @@ function Resume() {
               <li>Pi Hole</li>
               <li>Retro Pi</li>
               <li>
-                I have setup a dedicated Pi for a Homelab server to deploy
-                projects to
+                I have setup a dedicated Pi as a server to deploy projects to
+                for a start to my Homelab
               </li>
             </ul>
           </div>
