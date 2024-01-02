@@ -1,12 +1,15 @@
 // Link to Resume (changes based on version)
 import { Fragment } from 'react';
-import ResumePlaceholder from '/src/assets/resume/eric-hulse-placeholder.pdf';
+import ResumePath from '/src/assets/resume/2024-jan-resume-eric-hulse.pdf';
+import extractFilename from '../../utils/extractFilename';
 
-const liveResume = ResumePlaceholder;
-const downloadName = 'Eric-Hulse-Resume2023Dec';
+let resumeFilename = extractFilename(ResumePath);
 
 function Resume() {
   document.title = 'Resume | Third Coast 🦡';
+
+  console.log(resumeFilename);
+
   return (
     <Fragment>
       <section
@@ -106,13 +109,15 @@ function Resume() {
 
             <p>
               My resume is available as downloadable PDF and can be found below.
+              The current version of my resume is{' '}
+              <strong>{resumeFilename}</strong>
             </p>
 
             {/* Resume Link */}
             <a
               id='resume-link'
-              href={liveResume}
-              download={downloadName}
+              href={ResumePath}
+              download={resumeFilename}
               target='_blank'
               rel='noopener noreferrer'>
               <button className='button is-info'>Download My Resume</button>
