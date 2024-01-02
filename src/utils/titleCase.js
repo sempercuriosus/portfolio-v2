@@ -1,21 +1,19 @@
-
 /**
  * @name titleCase
  * @description take in a string and capitalize each letter after a space
  * @param {string} title
- * @returns 
-*/
+ * @returns
+ */
 const titleCase = (title) => {
+  if (!title) {
+    return '';
+  }
 
-    if (!title) {
-        return '';
-    }
+  const newTitle = title.split(' ').map((item) => {
+    return item.charAt(0).toUpperCase() + item.slice(1);
+  });
 
-    const newTitle = title.split(' ').map((item) => {
-        return item.charAt(0).toUpperCase() + item.slice(1);
-    });
-
-    return newTitle.join(' ');
+  return newTitle.join(' ');
 }; //  [ end : titleCase ]
 
 export default titleCase;
