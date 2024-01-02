@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import titleCase from '../../utils/titleCase';
 // import devPicPath from '/public/images/eric-dev-pic-2.jpg';
-// const devPicPath = '/eric-dev-pic-2.jpg';
+const devPicPath = '/eric-dev-pic-2.jpg';
 const welcomeMessage = titleCase('Welcome to my portfolio.');
 
 function About() {
@@ -23,7 +23,7 @@ function About() {
               id='dev-photo'
               className='column '>
               <img
-                src={'/'}
+                src={devPicPath}
                 alt='Developer Profile Image'
                 className='image has-ratio'
                 width='350'
