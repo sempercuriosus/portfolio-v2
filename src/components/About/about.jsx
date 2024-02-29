@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import titleCase from '../../utils/titleCase';
-const dev_picPath = 'dist/images/eric-dev-pic-2.JPG';
+const dev_picPath = '/images/eric-dev-pic-2.JPG';
 const welcomeMessage = titleCase('Welcome to my portfolio.');
 
 function About() {
