@@ -43,17 +43,27 @@ function Contact() {
          Form Title
           */}
         <h2 className='title is-4'>Send me a message 📤</h2>
+
+        {/* Email  */}
+
         <p>
-          I do not use social media, so email is the best way to contact me. It
-          may be a day or two for me to return.
+          I do not use social media, so an{' '}
+          <a href={`mailto:${email}`}>
+            <strong>Email</strong>
+          </a>{' '}
+          is the best way to contact me.
         </p>
 
+        <p>
+          It may be a day or two for me to return. Scanning the QR code will
+          also send me an email.
+        </p>
         <br />
 
-        <p className='title is-6'>
-          <a href={`mailto:${email}`}>{email}</a>{' '}
-        </p>
-        {/* Email  */}
+        <figure className='image is-128x128'>
+          <img src='/images/qr-email.png' />
+        </figure>
+        <br />
       </div>
     </section>
   );
