@@ -76,6 +76,15 @@ function Portfolio() {
       deployedLink:
         'https://rocky-journey-83321-4f006da2de0c.herokuapp.com/login',
     },
+    {
+      featuredProject: true,
+      projectCode: 'statelinefc',
+      title: 'Stateline Family Chiropractic',
+      description:
+        'I put this website together for a local Chiropractor, my wife, when she wanted to refresh what her website looked like.',
+      codeRepo: 'https://github.com/sempercuriosus/stateline-fc',
+      deployedLink: 'https://statelinechiro.com',
+    },
     // {
     // featuredProject: false,
     // projectCode: 'readme',
