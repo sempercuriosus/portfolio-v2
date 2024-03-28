@@ -3,9 +3,6 @@ import Index from './components/Main/index.jsx';
 import Footer from './components/Footer/footer.jsx';
 
 function App() {
-  {
-    /* setting up the app structure */
-  }
   return (
     <>
       {/* Header also adds the nav */}
