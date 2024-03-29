@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 const links = {
   github: 'https://github.com/sempercuriosus',
   email: 'mailto:' + 'hulse@hey.com',
@@ -8,8 +6,10 @@ const links = {
 
 function Footer() {
   return (
-    <Fragment>
-      <footer className='footer'>
+    <>
+      <footer
+        className='footer'
+        style={{ marginTop: '10rem' }}>
         <div className='container'>
           <p className='block'>
             Checkout my GitHub <a href={links.github}>landing page</a> and see
@@ -23,7 +23,7 @@ function Footer() {
           </p>
         </div>
       </footer>
-    </Fragment>
+    </>
   );
 }
 

@@ -1,10 +1,15 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import Project from '../Project/project.jsx';
 
 // The Portfolio is a COLLECTION of many various Projects I am featuring
 
 function Portfolio() {
   document.title = 'Portfolio | Third Coast 🦡';
+
+  // Scrolling to the top, after render
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   {
     /*
