@@ -12,7 +12,7 @@ function About() {
 
   return (
     <>
-      <section>
+      <section id='about'>
         <div className='section is-large title is-1 block has-text-centered has-text-light'>
           Welcome To My <span className='orangeify'>Portfolio</span>
           <span
@@ -20,17 +20,15 @@ function About() {
             className='blink-me'
             style={{ marginLeft: '1rem' }}></span>
         </div>
-
+        {/* 
         <div
           className='title orangeify'
           style={{ paddingLeft: '1rem' }}>
           ABOUT
-        </div>
+        </div> */}
 
         <hr />
-        <div
-          id='about'
-          className='box is-size-5'>
+        <div className='box is-size-5'>
           <div className='columns is-multiline is-vcentered'>
             <div className='column is-narrow'>
               <figure
@@ -80,7 +78,7 @@ function About() {
           <br />
 
           <div className='section has-text-centered'>
-            Please, checkout some of my{' '}
+            Here are some of my{' '}
             <strong>
               <Link
                 id='link-portfolio-about'
@@ -88,14 +86,15 @@ function About() {
                 selected works
               </Link>
             </strong>{' '}
-            or{' '}
+            or if you would like to{' '}
             <strong>
               <Link
                 id='link-contact-about'
                 to='/Contact'>
-                connect with me
+                connect
               </Link>
-            </strong>
+            </strong>{' '}
+            with me
           </div>
         </div>
       </section>

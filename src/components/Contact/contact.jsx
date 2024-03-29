@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-
-const email = 'hulse@hey.com';
+import ContactButton from '../ui/contactButton';
+import links from '../../utils/links';
 
 function Contact() {
   document.title = 'Contact | Third Coast 🦡';
@@ -10,65 +10,50 @@ function Contact() {
     window.scrollTo(0, 0);
   }, []);
 
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: '',
-  // });
-
-  // Set Values
-  // const setFormValue = (event) => {
-  //   const { target } = event;
-  //   const name = target.name;
-  //   const value = target.value;
-
-  //   if (!value) {
-  //     return alert(name + ' is required. Please enter in a value.');
-  //   }
-
-  //   setFormData((prevData) => {
-  //     const updatedData = {
-  //       ...prevData,
-  //       [name]: value,
-  //     };
-
-  //     return updatedData;
-  //   });
-  // };
-
-  // Input Form
   return (
     <section
       id='contact'
-      className='container notification has-background-dark'>
-      <h1 className='title has-text-light'>CONTACT</h1>
+      className=''>
+      <div className='section title is-1 block has-text-centered orangeify'>
+        CONTACT
+      </div>
+
       <hr />
-      <div className='container notification has-background-light'>
-        {/*
-         Form Title
-          */}
-        <h2 className='title is-4'>Send me a message 📤</h2>
 
-        {/* Email  */}
+      <div className='box is-size-5'>
+        <h2 className='title is-4'>Around the Web</h2>
 
-        <p>
-          I do not use social media, so an{' '}
-          <a href={`mailto:${email}`}>
-            <strong>Email</strong>
-          </a>{' '}
-          is the best way to contact me.
+        <p className='block'>
+          {' '}
+          I do not use social media. Here is how I can be found, but it may be a
+          day or two for me to return.
         </p>
 
-        <p>
-          It may be a day or two for me to return. Scanning the QR code will
-          also send me an email.
-        </p>
-        <br />
+        <div className='section'>
+          <div className='grid is-gap-6'>
+            <div className='cell'>
+              <ContactButton
+                name='Email'
+                icon='📬'
+                color='has-background-dark'
+                text='has-text-light'
+                action='email'
+                target={links.email}
+              />
+            </div>
 
-        <figure className='image is-128x128'>
-          <img src='/images/qr-email.png' />
-        </figure>
-        <br />
+            <div className='cell'>
+              <ContactButton
+                name='GitHub'
+                icon='💾'
+                color='has-background-dark'
+                text='has-text-light'
+                action='github'
+                target={links.github}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
