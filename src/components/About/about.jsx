@@ -48,27 +48,41 @@ function About() {
               <div className='block title is-3'>Hello!</div>
 
               <div className='block'>
-                My name is{' '}
-                <span
-                  id='dev_name'
-                  className='has-text-weight-bold'>
-                  Eric
-                </span>{' '}
-                and I am a Full Stack Web Developer.
+                <p>
+                  My name is{' '}
+                  <span
+                    id='dev_name'
+                    className='has-text-weight-bold'>
+                    Eric
+                  </span>{' '}
+                  and I am a Full Stack Web Developer currently based in South
+                  Carolina, USA, originally hailing from Wisconsin 🧀.
+                </p>
               </div>
 
               <div className='block'>
-                I have a genuine love for learning, which is why I chose the
-                username <strong>Semper Curiosus</strong>. My curiosity drives
-                me to understand the reasons <em>behind</em> things, and I am
-                always eager to explore the world around me.
+                <p>I love working with my hands, crafting, and creating.</p>
               </div>
 
               <div className='block'>
-                I embrace the process of trying, making mistakes, getting
-                started, and recognizing that perfection is not the goal. My
-                passion lies in technology that empowers people, provides
-                solutions, remains unintrusive, and simplifies life.
+                <p>
+                  I have a genuine joy for learning, which is why I chose the
+                  username <strong>Semper Curiosus</strong>. It is my curiosity
+                  about what surounds me drives me to understand the{' '}
+                  <em>why</em> behind them.
+                  {/* I am always eager to explore the
+                  world around me. */}
+                </p>
+              </div>
+
+              <div className='block'>
+                <p>
+                  I embrace the process of trying, to get started and make
+                  mistakes, recognizing that perfection is not the goal. I
+                  believe that technology that empowers people, provides
+                  solutions, remains unintrusive, and simplifies life. I aim to
+                  make that kind of technology.
+                </p>
               </div>
               {/* Hobbies*/}
               <Hobbies />
