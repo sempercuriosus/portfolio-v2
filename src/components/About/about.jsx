@@ -12,7 +12,7 @@ function About() {
 
   return (
     <>
-      <section>
+      <section id='about'>
         <div className='section is-large title is-1 block has-text-centered has-text-light'>
           Welcome To My <span className='orangeify'>Portfolio</span>
           <span
@@ -28,9 +28,7 @@ function About() {
         </div>
 
         <hr />
-        <div
-          id='about'
-          className='box is-size-5'>
+        <div className='box is-size-5'>
           <div className='columns is-multiline is-vcentered'>
             <div className='column is-narrow'>
               <figure
