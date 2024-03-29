@@ -1,8 +1,4 @@
-const links = {
-  github: 'https://github.com/sempercuriosus',
-  email: 'mailto:' + 'hulse@hey.com',
-  blog: 'https://world.hey.com/hulse/',
-};
+import links from '../../utils/links';
 
 function Footer() {
   return (
