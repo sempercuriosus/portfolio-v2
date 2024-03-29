@@ -1,3 +1,31 @@
+body {
+    /* border: thick red solid */
+    background-color: rgb(54, 54, 54);
+
+}
+
+.orangeify {
+    color: darkorange;
+}
+
+.blink-me {
+    animation: blinker 1500ms steps(1) infinite;
+}
+
+#blinky::after {
+    content: "";
+    width: 15px;
+    height: 45px;
+    background: white;
+    display: inline-block
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 #dev-name {
     color: darkorange;
     margin-right: 0.5em;
