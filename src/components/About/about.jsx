@@ -1,92 +1,101 @@
-import { Fragment } from 'react';
-import titleCase from '../../utils/titleCase';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Hobbies from '../Hobbies/hobbies';
 const dev_picPath = '/images/eric-dev-pic-2.JPG';
-const welcomeMessage = titleCase('Welcome to my portfolio.');
 
 function About() {
   document.title = 'About | Third Coast 🦡';
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <Fragment>
-      <section className='container notification has-background-dark'>
-        <h1 className='title has-text-light'>ABOUT</h1>
+    <>
+      <section>
+        <div className='section is-large title is-1 block has-text-centered has-text-light'>
+          Welcome To My <span className='orangeify'>Portfolio</span>
+          <span
+            id='blinky'
+            className='blink-me'
+            style={{ marginLeft: '1rem' }}></span>
+        </div>
+
+        <div className='title orangeify'>ABOUT</div>
+
         <hr />
-        <div className='container notification has-background-light'>
-          <p className='title block'>{welcomeMessage} </p>
-
-          {/* About */}
-          <div
-            id='about'
-            className='container columns'>
-            <aside
-              id='dev-photo'
-              className='column '>
-              <img
-                src={dev_picPath}
-                alt='Developer Profile Image'
-                className='image has-ratio'
-                width='350'
-              />
-            </aside>
-
-            <div className='column is-four-fifths '>
-              <div className='content'>
-                {/* Name */}
-
-                <p>
-                  Hi! My name is <span id='dev_name'>Eric</span> and I am a Full
-                  Stack Web Developer.
-                </p>
-
-                {/* Blurb */}
-
-                <p>
-                  I have a genuine love for learning, which is why I chose the
-                  username <strong>Semper Curiosus</strong>. My curiosity drives
-                  me to understand the reasons <em>behind</em> things, and I am
-                  always eager to explore the world around me.
-                </p>
-                <p>
-                  I embrace the process of trying, making mistakes, and getting
-                  started, recognizing that perfection is not the goal. My
-                  passion lies in technology that empowers people, provides
-                  solutions, remains unintrusive, and simplifies life.
-                </p>
-              </div>
-
-              {/* Hobbies*/}
-
-              <div
-                id='dev-hobby'
-                className='content'>
-                <h2
-                  id='hobby-title'
-                  className='title is-5'>
-                  Outside Work
-                </h2>
-
-                {/* Hobbies List*/}
-                <ul id='hobby-list'>
-                  <li>Hike</li>
-                  <li>Read</li>
-                  <li>
-                    Exploring new-to-me places or revisiting previous places to
-                    learn some more
-                  </li>
-                  <li>
-                    Woodworking and building with my hands. Most of these
-                    projects are utilitarian in nature, namely fixing my home or
-                    maintaining my cars
-                  </li>
-                  <li>Play Disc Golf</li>
-                  <li>Most Importantly, spending time with my family</li>
-                </ul>
-              </div>
+        <div
+          id='about'
+          className='box is-size-5'>
+          <div className='columns is-multiline is-vcentered'>
+            <div className='column is-narrow'>
+              <figure
+                id='dev-photo'
+                className=''>
+                <img
+                  src={dev_picPath}
+                  alt='Developer Profile Image'
+                  className='image has-ratio'
+                  width='300'
+                  style={{ borderRadius: '6px' }}
+                />
+              </figure>
             </div>
+
+            <div className='column is-offset-1'>
+              <div className='block title is-3'>Hello!</div>
+
+              <div className='block'>
+                My name is{' '}
+                <span
+                  id='dev_name'
+                  className='has-text-weight-bold'>
+                  Eric
+                </span>{' '}
+                and I am a Full Stack Web Developer.
+              </div>
+
+              <div className='block'>
+                I have a genuine love for learning, which is why I chose the
+                username <strong>Semper Curiosus</strong>. My curiosity drives
+                me to understand the reasons <em>behind</em> things, and I am
+                always eager to explore the world around me.
+              </div>
+
+              <div className='block'>
+                I embrace the process of trying, making mistakes, getting
+                started, and recognizing that perfection is not the goal. My
+                passion lies in technology that empowers people, provides
+                solutions, remains unintrusive, and simplifies life.
+              </div>
+              {/* Hobbies*/}
+              <Hobbies />
+            </div>
+          </div>
+
+          <br />
+
+          <div className='section has-text-centered'>
+            Please, checkout some of my{' '}
+            <strong>
+              <Link
+                id='link-portfolio-about'
+                to='/Portfolio'>
+                selected works
+              </Link>
+            </strong>{' '}
+            or{' '}
+            <strong>
+              <Link
+                id='link-contact-about'
+                to='/Contact'>
+                connect with me
+              </Link>
+            </strong>
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 }
 
