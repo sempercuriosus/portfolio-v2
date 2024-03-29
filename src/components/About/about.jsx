@@ -21,7 +21,11 @@ function About() {
             style={{ marginLeft: '1rem' }}></span>
         </div>
 
-        <div className='title orangeify'>ABOUT</div>
+        <div
+          className='title orangeify'
+          style={{ paddingLeft: '1rem' }}>
+          ABOUT
+        </div>
 
         <hr />
         <div
