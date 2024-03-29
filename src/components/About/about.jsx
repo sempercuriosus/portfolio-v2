@@ -20,12 +20,12 @@ function About() {
             className='blink-me'
             style={{ marginLeft: '1rem' }}></span>
         </div>
-
+        {/* 
         <div
           className='title orangeify'
           style={{ paddingLeft: '1rem' }}>
           ABOUT
-        </div>
+        </div> */}
 
         <hr />
         <div className='box is-size-5'>
@@ -78,7 +78,7 @@ function About() {
           <br />
 
           <div className='section has-text-centered'>
-            Please, checkout some of my{' '}
+            Here are some of my{' '}
             <strong>
               <Link
                 id='link-portfolio-about'
@@ -86,14 +86,15 @@ function About() {
                 selected works
               </Link>
             </strong>{' '}
-            or{' '}
+            or if you would like to{' '}
             <strong>
               <Link
                 id='link-contact-about'
                 to='/Contact'>
-                connect with me
+                connect
               </Link>
-            </strong>
+            </strong>{' '}
+            with me
           </div>
         </div>
       </section>
