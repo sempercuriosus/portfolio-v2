@@ -1,9 +1,14 @@
-// import { useState } from 'react';
+import { useEffect } from 'react';
 
 const email = 'hulse@hey.com';
 
 function Contact() {
   document.title = 'Contact | Third Coast 🦡';
+
+  // Scrolling to the top, after render
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // const [formData, setFormData] = useState({
   //   name: '',

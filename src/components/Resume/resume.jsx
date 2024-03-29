@@ -1,5 +1,5 @@
 // Link to Resume (changes based on version)
-import { Fragment } from 'react';
+import { useEffect } from 'react';
 import ResumePath from '/src/assets/resume/2024-jan-resume-eric-hulse.pdf';
 import extractFilename from '../../utils/extractFilename';
 
@@ -8,8 +8,13 @@ let resumeFilename = extractFilename(ResumePath);
 function Resume() {
   document.title = 'Resume | Third Coast 🦡';
 
+  // Scrolling to the top, after render
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <Fragment>
+    <>
       <section
         id='resume'
         className='container notification has-background-dark'>
@@ -126,7 +131,7 @@ function Resume() {
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 }
 
