@@ -28,6 +28,8 @@ function About() {
         </div> */}
 
         <hr />
+        <br />
+
         <div className='box is-size-5'>
           <div className='columns is-multiline is-vcentered'>
             <div className='column is-narrow'>

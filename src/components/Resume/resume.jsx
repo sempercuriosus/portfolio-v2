@@ -15,119 +15,134 @@ function Resume() {
 
   return (
     <>
-      <section
-        id='resume'
-        className='container notification has-background-dark'>
-        <h1 className='title has-text-light'>RESUME</h1>
+      <section id='resume'>
+        <h1 className='title orangeify'>RESUME</h1>
+
         <hr />
         <br />
-        <div className='container  notification is-light'>
-          {/* Experience */}
 
-          <div
-            id='experience'
-            className='content block'>
-            {/* Experience Title */}
-
-            {/* Tech Stack List */}
-            <h2
-              id='experience-title'
-              className='subtitle'>
-              <strong>Tech Stack</strong>
-            </h2>
-
-            {/* Blurb */}
-            <p>
-              This is what I have experience in, there is no particular order to
-              it, and I am always willing to add to it.{' '}
-            </p>
-
-            {/* Experience List */}
-            <h3>Backend</h3>
-            <ul
-              id='experience-list'
-              className='content'>
-              <li>Javascript, Node, Express</li>
-              <li>Python</li>
-              <li>C#</li>
-              <li>T-Sql, NoSql, MongoDB</li>
-            </ul>
-
-            <h3>Frontend</h3>
-            <ul>
-              <li>React</li>
-              <li>CSS</li>
-              <li>
-                <a
-                  href='https://bulma.io'
-                  target='blank'>
-                  Bulma CSS
-                </a>
-              </li>
-              <li>
-                <a
-                  href='https://getbootstrap.com'
-                  target='blank'>
-                  Bootstrap CSS
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Random Tech Stuff */}
-          <div
-            id='other-experience '
-            className='content block'>
-            <h2
-              id='other-title'
-              className='subtitle'>
-              <strong>Other Projects</strong>
-            </h2>
-
-            <p id='other-title-pi'>
-              Recently, I have been learning some about Rasperry Pi and I am
-              setting up a Homelab. Here are my projects:
-            </p>
-
-            {/* Random Tech List */}
-            <ul id='other-list-pi'>
-              <li>Pi Hole</li>
-              <li>Retro Pi</li>
-              <li>
-                I have setup a dedicated Pi as a server to deploy projects to
-              </li>
-              <li>
-                Converting my old computer to a NAS (I am just now starting
-                this, as of Jan 2024)
-              </li>
-            </ul>
-          </div>
-
-          {/* Download Resume */}
+        <div className='box is-size-5 block'>
           <div
             id='resume-download'
-            className='content'>
-            <h2
-              id='other-title'
-              className='subtitle'>
-              <strong>Resume</strong>
-            </h2>
+            className='block'
+            style={{ padding: '3rem 0' }}>
+            <h2 className='title is-4'>Resume</h2>
 
-            <p>
-              My resume is available as downloadable PDF and can be found below.
-              The current version of my resume is{' '}
-              <strong>{resumeFilename}</strong>
-            </p>
+            <div className='block'>
+              <p>
+                My resume is available as downloadable PDF and can be found
+                below.
+              </p>
+            </div>
 
             {/* Resume Link */}
-            <a
-              id='resume-link'
-              href={ResumePath}
-              download={resumeFilename}
-              target='_blank'
-              rel='noopener noreferrer'>
-              <button className='button is-info'>Download My Resume</button>
-            </a>
+            <div className='block'>
+              <a
+                id='resume-link'
+                href={ResumePath}
+                download={resumeFilename}
+                target='_blank'
+                rel='noopener noreferrer'>
+                <button className='button is-info'>Download My Resume</button>
+              </a>
+            </div>
+          </div>
+
+          {/* Tech Stack List */}
+
+          <div
+            className='block'
+            style={{ padding: '1rem 0' }}>
+            <h2
+              id='experience-title'
+              className='title is-4'>
+              Tech Stack
+            </h2>
+            <p>
+              My current focus is within the{' '}
+              <strong>
+                <a
+                  href='https://wikitia.com/wiki/MERN_(solution_stack)'
+                  target='blank'>
+                  {' '}
+                  M.E.R.N Stack
+                </a>
+              </strong>
+              .
+            </p>
+
+            <p>
+              Here is what I have experience in, there is no particular order,
+              but I am always willing to add to it.{' '}
+            </p>
+          </div>
+
+          <div className='content block'>
+            {/* Experience List */}
+
+            <div
+              className='columns'
+              style={{ padding: '1rem 0' }}>
+              {/*  */}
+              <div className='column is-narrow'></div>
+
+              <div className='column is-half block'>
+                <p className='title is-4'>Frontend</p>
+
+                <ul>
+                  <li>React</li>
+                  <li>CSS</li>
+                  <li>
+                    <a
+                      href='https://bulma.io'
+                      target='blank'>
+                      Bulma CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href='https://getbootstrap.com'
+                      target='blank'>
+                      Bootstrap CSS
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className='column is-narrow'></div>
+
+              {/*  */}
+              <div className='column is-half block'>
+                <p className='title is-4'>Backend</p>
+
+                <ul>
+                  <li>Javascript, Node, Express</li>
+                  <li>Python</li>
+                  <li>C#</li>
+                  <li>T-Sql, NoSql, MongoDB</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className='block'>
+              <h2
+                id='other-title'
+                className='title is-4'>
+                <strong>Some Other Projects</strong>
+              </h2>
+
+              <ul id='other-list-pi'>
+                <li>Pi Hole</li>
+                <li>Retro Pi</li>
+                <li>
+                  I have setup a dedicated Pi as a server to deploy projects to
+                </li>
+                <li>
+                  Converting my old computer to a NAS (I am just now starting
+                  this, as of Jan 2024)
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
