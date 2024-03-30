@@ -136,9 +136,20 @@ function Portfolio() {
     //     <br />
     //   </section>
     // </>
-    <section className='section is-large box'>
-      <p className='title'>I am refactoring this section.</p>
-    </section>
+    <>
+      <section>
+        <div className='section title is-1 block has-text-centered orangeify'>
+          Projects
+        </div>
+
+        <hr />
+        <br />
+
+        <div className='section is-large box'>
+          <p className='title'>I am refactoring this section.</p>
+        </div>
+      </section>
+    </>
   );
 }
 

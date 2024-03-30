@@ -16,8 +16,9 @@ function Resume() {
   return (
     <>
       <section id='resume'>
-        <h1 className='title orangeify'>RESUME</h1>
-
+        <div className='section title is-1 block has-text-centered orangeify'>
+          Resume
+        </div>
         <hr />
         <br />
 
