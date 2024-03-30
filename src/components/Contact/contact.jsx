@@ -15,10 +15,11 @@ function Contact() {
       id='contact'
       className=''>
       <div className='section title is-1 block has-text-centered orangeify'>
-        CONTACT
+        Contact
       </div>
 
       <hr />
+      <br />
 
       <div className='box is-size-5'>
         <h2 className='title is-4'>Around the Web</h2>
