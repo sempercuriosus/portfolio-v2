@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Project from '../Project/project.jsx';
 
 // The Portfolio is a COLLECTION of many various Projects I am featuring
@@ -105,37 +105,40 @@ function Portfolio() {
   );
 
   return (
-    <Fragment>
-      <section className='container notification is-dark'>
-        <h1 className='title'>PORTFOLIO</h1>
-        <hr />
-        <br />
-        <div
-          id='projects'
-          className='columns is-multiline'>
-          {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
+    // <>
+    //   <section className='container notification is-dark'>
+    //     <h1 className='title'>PORTFOLIO</h1>
+    //     <hr />
+    //     <br />
+    //     <div
+    //       id='projects'
+    //       className='columns is-multiline'>
+    //       {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
 
-          {/* Map over all the projects above to create project cards */}
-          {featureStored.map((singleProject) => {
-            return (
-              // eslint-disable-next-line react/jsx-key
-              // Rendering the column here
-              <section
-                key={singleProject.projectCode}
-                // If the project is featured, then use the applying color and ⭐ (in project)
-                className={
-                  singleProject.featuredProject
-                    ? 'container content notification column is-11 block is-primary has-background-primary-dark has-text-black-bis'
-                    : 'container column is-5 notification has-background-grey-lighter has-text-black-bis'
-                }>
-                <Project project={singleProject} />
-              </section>
-            );
-          })}
-        </div>
-        <br />
-      </section>
-    </Fragment>
+    //       {/* Map over all the projects above to create project cards */}
+    //       {featureStored.map((singleProject) => {
+    //         return (
+    //           // eslint-disable-next-line react/jsx-key
+    //           // Rendering the column here
+    //           <section
+    //             key={singleProject.projectCode}
+    //             // If the project is featured, then use the applying color and ⭐ (in project)
+    //             className={
+    //               singleProject.featuredProject
+    //                 ? 'container content notification column is-11 block is-primary has-background-primary-dark has-text-black-bis'
+    //                 : 'container column is-5 notification has-background-grey-lighter has-text-black-bis'
+    //             }>
+    //             <Project project={singleProject} />
+    //           </section>
+    //         );
+    //       })}
+    //     </div>
+    //     <br />
+    //   </section>
+    // </>
+    <section className='section is-large box'>
+      <p className='title'>I am refactoring this section.</p>
+    </section>
   );
 }
 
