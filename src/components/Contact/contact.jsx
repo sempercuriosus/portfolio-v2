@@ -35,8 +35,8 @@ function Contact() {
               <ContactButton
                 name='Email'
                 icon='📬'
-                color='has-background-dark'
-                text='has-text-light'
+                color='is-info is-light'
+                text='has-text-dark'
                 action='email'
                 target={links.email}
               />
@@ -46,8 +46,8 @@ function Contact() {
               <ContactButton
                 name='GitHub'
                 icon='💾'
-                color='has-background-dark'
-                text='has-text-light'
+                color='is-info is-light'
+                text='has-text-dark'
                 action='github'
                 target={links.github}
               />

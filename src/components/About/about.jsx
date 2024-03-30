@@ -45,7 +45,7 @@ function About() {
             </div>
 
             <div className='column is-offset-1'>
-              <div className='block title is-3'>Hello!</div>
+              <div className='block title is-3'>Hello! 👋</div>
 
               <div className='block'>
                 <p>

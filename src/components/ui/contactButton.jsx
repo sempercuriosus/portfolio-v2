@@ -15,13 +15,14 @@ function ContactButton(props) {
 
   return (
     <button
-      className={'button is-large ' + props.text + ' ' + props.color}
+      className={'button is-large ' + props.color + ' ' + props.text}
       style={{
         width: '100%',
         maxWidth: '350px',
         height: '100%',
         maxHeight: '250px',
         padding: '3rem 1rem',
+        borderColor: 'black !important',
       }}
       onClick={() => {
         openLink(props.action, props.target);
