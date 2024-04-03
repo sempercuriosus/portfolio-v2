@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import titleCase from '../../utils/titleCase';
 
 // A Project represents a single piece of work
@@ -17,47 +16,77 @@ function Projects({ project }) {
   const { title, description, codeRepo, deployedLink, featuredProject } =
     project || emptyObj;
 
-  const featuredTitle = featuredProject ? title + ' ⭐' : title;
-
   return (
-    <Fragment>
-      {/* Project Details*/}
-
-      <div id='project-details'>
-        {/* TITLE */}
-        <h2
-          id='project-title'
-          className='title is-5'>
-          <strong>{titleCase(featuredTitle ? featuredTitle : title)}</strong>
-        </h2>
-
-        {/* Description */}
-        <p id='project-desc'>{description}</p>
-      </div>
-      <br />
-
-      {/* Repo Link */}
+    <>
       <div
-        id='project-links'
-        className='buttons block'>
-        {codeRepo && (
-          <button
-            onClick={() => window.open(codeRepo, '_blank')}
-            className='block button has-background-dark'>
-            <strong className='has-text-light'>Code Repository</strong>
-          </button>
-        )}
+        className='card'
+        style={{ margin: '0 1rem' }}>
+        <div
+          className='columns'
+          style={{ paddingTop: '1rem' }}>
+          {/* Image */}
+          <div
+            className='column'
+            style={{}}>
+            <div className='card-image'>
+              <figure className='image has-ratio'>
+                <img
+                  src='https://bulma.io/assets/images/placeholders/1280x960.png'
+                  alt='Placeholder image'
+                />
+              </figure>
+            </div>
+          </div>
 
-        {/* Deployed Link */}
-        {deployedLink && (
-          <button
-            onClick={() => window.open(deployedLink, '_blank')}
-            className='block button is-info has-background-info-dark'>
-            <strong>Deployed Application</strong>
-          </button>
-        )}
+          {/* Info */}
+          <div className='column'>
+            <header
+              className='title is-size-3-mobile'
+              style={{
+                padding: '1.5rem',
+              }}>
+              <strong>{titleCase(title)}</strong>
+            </header>
+
+            <div className='card-content'>
+              <div className='content has-'>
+                <p id='project-desc'>{description}</p>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/*  */}
+        <footer
+          className='columns'
+          style={{
+            margin: '0 1rem',
+            borderTop: 'thin lightgray solid',
+            paddingTop: '1rem',
+          }}>
+          <div className=' column'>
+            {codeRepo && (
+              <button
+                onClick={() => window.open(codeRepo, '_blank')}
+                className='button is-medium is-fullwidth is-info is-outlined'>
+                <strong className=''>View Code</strong>
+              </button>
+            )}
+          </div>
+
+          <div className=' column'>
+            {deployedLink && (
+              <button
+                onClick={() => window.open(deployedLink, '_blank')}
+                className='button is-medium is-fullwidth is-link is-outlined'>
+                <strong>View Application</strong>
+              </button>
+            )}
+          </div>
+        </footer>
       </div>
-    </Fragment>
+    </>
   );
 }
 

@@ -105,48 +105,30 @@ function Portfolio() {
   );
 
   return (
-    // <>
-    //   <section className='container notification is-dark'>
-    //     <h1 className='title'>PORTFOLIO</h1>
-    //     <hr />
-    //     <br />
-    //     <div
-    //       id='projects'
-    //       className='columns is-multiline'>
-    //       {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
-
-    //       {/* Map over all the projects above to create project cards */}
-    //       {featureStored.map((singleProject) => {
-    //         return (
-    //           // eslint-disable-next-line react/jsx-key
-    //           // Rendering the column here
-    //           <section
-    //             key={singleProject.projectCode}
-    //             // If the project is featured, then use the applying color and ⭐ (in project)
-    //             className={
-    //               singleProject.featuredProject
-    //                 ? 'container content notification column is-11 block is-primary has-background-primary-dark has-text-black-bis'
-    //                 : 'container column is-5 notification has-background-grey-lighter has-text-black-bis'
-    //             }>
-    //             <Project project={singleProject} />
-    //           </section>
-    //         );
-    //       })}
-    //     </div>
-    //     <br />
-    //   </section>
-    // </>
     <>
-      <section>
+      <section id='portfolio'>
         <div className='section title is-1 block has-text-centered orangeify'>
-          Projects
+          Portfolio
         </div>
-
         <hr />
         <br />
 
-        <div className='section is-large box'>
-          <p className='title'>I am refactoring this section.</p>
+        <div id='projects columns is-multiline'>
+          {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
+
+          {/* Map over all the projects above to create project cards */}
+          {featureStored.map((singleProject) => {
+            return (
+              // eslint-disable-next-line react/jsx-key
+              // Rendering the column here
+              <section
+                key={singleProject.projectCode}
+                // If the project is featured, then use the applying color and ⭐ (in project)
+                className='content block is-primary'>
+                <Project project={singleProject} />
+              </section>
+            );
+          })}
         </div>
       </section>
     </>
