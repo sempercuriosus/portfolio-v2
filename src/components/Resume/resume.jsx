@@ -1,5 +1,6 @@
 // Link to Resume (changes based on version)
 import { useEffect } from 'react';
+import PageTitle from '../ui/pageTitle';
 import ResumePath from '/src/assets/resume/2024-jan-resume-eric-hulse.pdf';
 import extractFilename from '../../utils/extractFilename';
 
@@ -27,7 +28,11 @@ function Resume() {
             id='resume-download'
             className='block'
             style={{ padding: '3rem 0' }}>
-            <h2 className='title is-3'>Resume</h2>
+            {/* <h2 className='title is-3'>Resume</h2> */}
+            <PageTitle
+              id='resume-title'
+              title='Resume'
+            />
 
             <div className='block'>
               <p>

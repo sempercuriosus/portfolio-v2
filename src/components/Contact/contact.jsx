@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PageTitle from '../ui/pageTitle';
 import ContactButton from '../ui/contactButton';
 import links from '../../utils/links';
 
@@ -25,7 +26,12 @@ function Contact() {
         <div
           className='block'
           style={{ padding: '3rem 0' }}>
-          <h2 className='title is-3'>Around the Web</h2>
+          <h2 className='title is-3'></h2>
+
+          <PageTitle
+            id='contact-title'
+            title='Around the Web'
+          />
 
           <p className='block'>
             {' '}
