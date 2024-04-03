@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hobbies from '../Hobbies/hobbies';
+import SectionTitle from '../ui/sectionTitle';
+
 const dev_picPath = '/images/eric-dev-pic-2.JPG';
 
 function About() {
@@ -47,7 +49,10 @@ function About() {
             </div>
 
             <div className='column is-offset-1'>
-              <div className='block title is-3'>Hello! 👋</div>
+              <SectionTitle
+                id='about-title'
+                title='Hello! 👋'
+              />
 
               <div className='block'>
                 <p>

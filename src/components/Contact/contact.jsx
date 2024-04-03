@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import PageTitle from '../ui/pageTitle';
+import SectionTitle from '../ui/sectionTitle';
 import ContactButton from '../ui/contactButton';
 import links from '../../utils/links';
 
@@ -15,12 +16,11 @@ function Contact() {
     <section
       id='contact'
       className=''>
-      <div className='section title is-1 block has-text-centered orangeify'>
-        Contact
-      </div>
-
-      <hr />
-      <br />
+      {/*  */}
+      <PageTitle
+        id='contact-title'
+        title='Contact'
+      />
 
       <div className='box is-size-5'>
         <div
@@ -28,7 +28,7 @@ function Contact() {
           style={{ padding: '3rem 0' }}>
           <h2 className='title is-3'></h2>
 
-          <PageTitle
+          <SectionTitle
             id='contact-title'
             title='Around the Web'
           />
