@@ -27,7 +27,7 @@ function Resume() {
             id='resume-download'
             className='block'
             style={{ padding: '3rem 0' }}>
-            <h2 className='title is-4'>Resume</h2>
+            <h2 className='title is-3'>Resume</h2>
 
             <div className='block'>
               <p>
@@ -56,10 +56,16 @@ function Resume() {
             style={{ padding: '1rem 0' }}>
             <h2
               id='experience-title'
-              className='title is-4'>
+              className='title is-3'>
               Tech Stack
             </h2>
-            <p>
+
+            <p className='block'>
+              Here is what I have experience in, there is no particular order,
+              but I am always willing to add to it.{' '}
+            </p>
+
+            <p className='block'>
               My current focus is within the{' '}
               <strong>
                 <a
@@ -71,11 +77,6 @@ function Resume() {
               </strong>
               .
             </p>
-
-            <p>
-              Here is what I have experience in, there is no particular order,
-              but I am always willing to add to it.{' '}
-            </p>
           </div>
 
           <div className='content block'>
@@ -83,12 +84,19 @@ function Resume() {
 
             <div
               className='columns'
-              style={{ padding: '1rem 0' }}>
+              style={{ paddingBottom: '2rem' }}>
               {/*  */}
-              <div className='column is-narrow'></div>
-
-              <div className='column is-half block'>
-                <p className='title is-4'>Frontend</p>
+              <div
+                className='notification column'
+                style={{ margin: '0 0.75rem' }}>
+                <p
+                  className='title is-4'
+                  style={{
+                    padding: '0 0 1.5rem 0.75rem',
+                    borderBottom: 'thin lightgrey solid',
+                  }}>
+                  Frontend
+                </p>
 
                 <ul>
                   <li>React</li>
@@ -108,13 +116,22 @@ function Resume() {
                     </a>
                   </li>
                 </ul>
+
+                <br />
               </div>
 
-              <div className='column is-narrow'></div>
-
               {/*  */}
-              <div className='column is-half block'>
-                <p className='title is-4'>Backend</p>
+              <div
+                className='notification column'
+                style={{ margin: '0 0.75rem' }}>
+                <p
+                  className='title is-4'
+                  style={{
+                    padding: '0 0 1.5rem 0.75rem',
+                    borderBottom: 'thin lightgrey solid',
+                  }}>
+                  Backend
+                </p>
 
                 <ul>
                   <li>Javascript, Node, Express</li>
@@ -122,6 +139,8 @@ function Resume() {
                   <li>C#</li>
                   <li>T-Sql, NoSql, MongoDB</li>
                 </ul>
+
+                <br />
               </div>
             </div>
 
