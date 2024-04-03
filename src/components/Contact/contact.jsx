@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import PageTitle from '../ui/pageTitle';
+import SectionTitle from '../ui/sectionTitle';
 import ContactButton from '../ui/contactButton';
 import links from '../../utils/links';
 
@@ -14,44 +16,52 @@ function Contact() {
     <section
       id='contact'
       className=''>
-      <div className='section title is-1 block has-text-centered orangeify'>
-        Contact
-      </div>
-
-      <hr />
-      <br />
+      {/*  */}
+      <PageTitle
+        id='contact-title'
+        title='Contact'
+      />
 
       <div className='box is-size-5'>
-        <h2 className='title is-4'>Around the Web</h2>
+        <div
+          className='block'
+          style={{ padding: '3rem 0' }}>
+          <h2 className='title is-3'></h2>
 
-        <p className='block'>
-          {' '}
-          I do not use social media. Here is how I can be found, but it may be a
-          day or two for me to return.
-        </p>
+          <SectionTitle
+            id='contact-title'
+            title='Around the Web'
+          />
 
-        <div className='section'>
-          <div className='grid is-gap-6'>
-            <div className='cell'>
-              <ContactButton
-                name='Email'
-                icon='📬'
-                color='is-info is-light'
-                text='has-text-dark'
-                action='email'
-                target={links.email}
-              />
-            </div>
+          <p className='block'>
+            {' '}
+            I do not use social media. Here is how I can be found, but it may be
+            a day or two for me to return.
+          </p>
 
-            <div className='cell'>
-              <ContactButton
-                name='GitHub'
-                icon='💾'
-                color='is-info is-light'
-                text='has-text-dark'
-                action='github'
-                target={links.github}
-              />
+          <div className='section'>
+            <div className='grid is-gap-6'>
+              <div className='cell'>
+                <ContactButton
+                  name='Email'
+                  icon='📬'
+                  color='is-info is-light'
+                  text='has-text-dark'
+                  action='email'
+                  target={links.email}
+                />
+              </div>
+
+              <div className='cell'>
+                <ContactButton
+                  name='GitHub'
+                  icon='💾'
+                  color='is-info is-light'
+                  text='has-text-dark'
+                  action='github'
+                  target={links.github}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 // Link to Resume (changes based on version)
 import { useEffect } from 'react';
+import SectionTitle from '../ui/sectionTitle';
+import PageTitle from '../ui/pageTitle';
 import ResumePath from '/src/assets/resume/2024-jan-resume-eric-hulse.pdf';
 import extractFilename from '../../utils/extractFilename';
 
@@ -16,18 +18,21 @@ function Resume() {
   return (
     <>
       <section id='resume'>
-        <div className='section title is-1 block has-text-centered orangeify'>
-          Resume
-        </div>
-        <hr />
-        <br />
-
+        <PageTitle
+          id='resume-title'
+          title='Resume'
+        />
         <div className='box is-size-5 block'>
           <div
             id='resume-download'
             className='block'
             style={{ padding: '3rem 0' }}>
-            <h2 className='title is-3'>Resume</h2>
+            {/*  */}
+
+            <SectionTitle
+              id='resume-title'
+              title='Resume'
+            />
 
             <div className='block'>
               <p>
