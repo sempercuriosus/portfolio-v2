@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Project from '../Project/project.jsx';
+import PageTitle from '../ui/pageTitle';
 
 // The Portfolio is a COLLECTION of many various Projects I am featuring
 
@@ -107,11 +108,10 @@ function Portfolio() {
   return (
     <>
       <section id='portfolio'>
-        <div className='section title is-1 block has-text-centered orangeify'>
-          Portfolio
-        </div>
-        <hr />
-        <br />
+        <PageTitle
+          id='portfolio-title'
+          title='Portfolio'
+        />
 
         <div id='projects columns is-multiline'>
           {/* NOTE this map is using an IMPLICIT return with parens not curly braces */}
