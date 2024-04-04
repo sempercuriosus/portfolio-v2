@@ -11,19 +11,45 @@ function Projects({ project }) {
     description: '',
     codeRepo: '',
     deployedLink: '',
+    imagePath: '',
+    featuredProject: '',
   };
 
-  const { title, description, codeRepo, deployedLink, featuredProject } =
-    project || emptyObj;
+  const {
+    title,
+    description,
+    codeRepo,
+    deployedLink,
+    imagePath,
+    featuredProject,
+  } = project || emptyObj;
 
   return (
     <>
       <div
         className='card'
         style={{ margin: '0 1rem' }}>
+        <header
+          className='title is-size-3-mobile'
+          style={{
+            padding: '1.5rem',
+          }}>
+          <strong>{titleCase(title)}</strong>
+        </header>
+
         <div
           className='columns'
           style={{ paddingTop: '1rem' }}>
+          {/* Info */}
+          <div className='column'>
+            <div className='card-content'>
+              <div className='content has-'>
+                <p id='project-desc'>{description}</p>
+                <br />
+              </div>
+            </div>
+          </div>
+
           {/* Image */}
           <div
             className='column'
@@ -31,28 +57,13 @@ function Projects({ project }) {
             <div className='card-image'>
               <figure className='image has-ratio'>
                 <img
-                  src='https://bulma.io/assets/images/placeholders/1280x960.png'
+                  src={
+                    imagePath ||
+                    'https://bulma.io/assets/images/placeholders/1280x960.png'
+                  }
                   alt='Placeholder image'
                 />
               </figure>
-            </div>
-          </div>
-
-          {/* Info */}
-          <div className='column'>
-            <header
-              className='title is-size-3-mobile'
-              style={{
-                padding: '1.5rem',
-              }}>
-              <strong>{titleCase(title)}</strong>
-            </header>
-
-            <div className='card-content'>
-              <div className='content has-'>
-                <p id='project-desc'>{description}</p>
-                <br />
-              </div>
             </div>
           </div>
         </div>
