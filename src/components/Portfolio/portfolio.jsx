@@ -66,7 +66,7 @@ function Portfolio() {
         "Taking inspiration from John Conway's Doomsday Algorithm, I made this little script to return the day of the week any date falls on.",
       codeRepo: 'https://github.com/sempercuriosus/doomsdate_public',
       deployedLink: '',
-      imagePath: baseImagePath + 'doomsday',
+      imagePath: baseImagePath + 'doomsday.png',
     },
     {
       featuredProject: false,
