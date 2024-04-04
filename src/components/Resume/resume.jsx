@@ -22,7 +22,7 @@ function Resume() {
           id='resume-title'
           title='Resume'
         />
-        <div className='box is-size-5 block'>
+        <div className='is-size-5 block'>
           <div
             id='resume-download'
             className='block'

@@ -15,24 +15,18 @@ function About() {
   return (
     <>
       <section id='about'>
-        <div className='section is-large title is-1 block has-text-centered has-text-light'>
+        <div className='section is-large title is-1 block has-text-centered'>
           Welcome To My <span className='orangeify'>Portfolio</span>
           <span
             id='blinky'
             className='blink-me'
             style={{ marginLeft: '1rem' }}></span>
         </div>
-        {/* 
-        <div
-          className='title orangeify'
-          style={{ paddingLeft: '1rem' }}>
-          ABOUT
-        </div> */}
 
         <hr />
         <br />
 
-        <div className='box is-size-5'>
+        <div className='is-size-5'>
           <div className='columns is-multiline is-vcentered'>
             <div className='column is-narrow'>
               <figure

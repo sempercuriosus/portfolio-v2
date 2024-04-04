@@ -22,7 +22,7 @@ function Contact() {
         title='Contact'
       />
 
-      <div className='box is-size-5'>
+      <div className='is-size-5'>
         <div
           className='block'
           style={{ padding: '3rem 0' }}>
@@ -45,7 +45,7 @@ function Contact() {
                 <ContactButton
                   name='Email'
                   icon='📬'
-                  color='is-info is-light'
+                  color='is-info'
                   text='has-text-dark'
                   action='email'
                   target={links.email}
@@ -56,8 +56,8 @@ function Contact() {
                 <ContactButton
                   name='GitHub'
                   icon='💾'
-                  color='is-info is-light'
-                  text='has-text-dark'
+                  color='is-dark'
+                  text='has-text-light'
                   action='github'
                   target={links.github}
                 />

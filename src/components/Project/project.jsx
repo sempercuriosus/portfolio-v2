@@ -27,8 +27,8 @@ function Projects({ project }) {
   return (
     <>
       <div
-        className='card'
-        style={{ margin: '0 1rem' }}>
+        className='card has-background-light'
+        style={{ margin: '4rem 1rem' }}>
         <header
           className='title is-size-3-mobile'
           style={{
