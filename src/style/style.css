@@ -1,7 +1,10 @@
 body {
     /* border: thick red solid */
     /* background-color: rgb(46, 51, 61); */
+}
 
+main {
+    padding: 0 1rem;
 }
 
 .orangeify {
