@@ -9,21 +9,24 @@ function Nav({ developerName }) {
     <>
       <nav
         id='nav-nav'
-        className='navbar is-spaced has-background-dark'
+        className='navbar is-spaced'
         role='navigation'
         aria-label='main navigation'>
         <div className='navbar-brand'>
           <div
             id='dev-name'
-            className='navbar-item has-background-dark'>
-            {developerName} <em id='name-div'>|</em>
+            className='navbar-item'>
+            {developerName}{' '}
+            <em
+              id='name-div'
+              style={{ color: 'black' }}>
+              |
+            </em>
           </div>
 
           <a
             role='button'
-            className={`navbar-burger burger has-text-light ${
-              isActive ? 'is-active' : ''
-            }`}
+            className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
             aria-label='menu'
             aria-expanded='false'
             onClick={() => {
@@ -31,22 +34,20 @@ function Nav({ developerName }) {
             }}>
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
-            <span aria-hidden='true'></span>
+            <span aria-hidden='true'></span>{' '}
           </a>
         </div>
 
         {/* Links */}
         <div
           id='navbar-menu'
-          className={`navbar-menu has-background-dark ${
-            isActive ? 'is-active' : ''
-          }`}>
+          className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
           <div className='navbar-start'>
             {/* About */}
             <Link
               id='link-about'
               to='/'
-              className='navbar-item has-text-light'>
+              className='navbar-item'>
               <strong>ABOUT</strong>
             </Link>
 
@@ -54,7 +55,7 @@ function Nav({ developerName }) {
             <Link
               id='link-portfolio'
               to='/Portfolio'
-              className='navbar-item has-text-light'>
+              className='navbar-item'>
               <strong>PORTFOLIO</strong>
             </Link>
 
@@ -62,7 +63,7 @@ function Nav({ developerName }) {
             <Link
               id='link-resume'
               to='/Resume'
-              className='navbar-item has-text-light'>
+              className='navbar-item'>
               <strong>RESUME</strong>
             </Link>
 
@@ -70,7 +71,7 @@ function Nav({ developerName }) {
             <Link
               id='link-contact'
               to='/Contact'
-              className='navbar-item has-text-light'>
+              className='navbar-item'>
               <strong>CONTACT</strong>
             </Link>
           </div>
