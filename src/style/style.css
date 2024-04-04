@@ -19,7 +19,7 @@ main {
     content: "";
     width: 15px;
     height: 45px;
-    background: white;
+    background: rgb(57, 57, 57);
     display: inline-block
 }
 
