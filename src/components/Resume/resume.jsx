@@ -2,8 +2,10 @@
 import { useEffect } from 'react';
 import SectionTitle from '../ui/sectionTitle';
 import PageTitle from '../ui/pageTitle';
+import ListContainer from '../ui/listContainer';
 import ResumePath from '/src/assets/resume/2024-jan-resume-eric-hulse.pdf';
 import extractFilename from '../../utils/extractFilename';
+import experienceList from '../../utils/experienceList';
 
 let resumeFilename = extractFilename(ResumePath);
 
@@ -87,87 +89,21 @@ function Resume() {
           <div className='content block'>
             {/* Experience List */}
 
-            <div
-              className='columns'
-              style={{ paddingBottom: '2rem' }}>
-              {/*  */}
-              <div
-                className='notification column'
-                style={{ margin: '0 0.75rem' }}>
-                <p
-                  className='title is-4'
-                  style={{
-                    padding: '0 0 1.5rem 0.75rem',
-                    borderBottom: 'thin lightgrey solid',
-                  }}>
-                  Frontend
-                </p>
+            <ListContainer
+              title='Frontend'
+              list={experienceList.frontend}
+            />
 
-                <ul>
-                  <li>React</li>
-                  <li>CSS</li>
-                  <li>
-                    <a
-                      href='https://bulma.io'
-                      target='blank'>
-                      Bulma CSS
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://getbootstrap.com'
-                      target='blank'>
-                      Bootstrap CSS
-                    </a>
-                  </li>
-                </ul>
+            {/*  */}
+            <ListContainer
+              title='Backend'
+              list={experienceList.backend}
+            />
 
-                <br />
-              </div>
-
-              {/*  */}
-              <div
-                className='notification column'
-                style={{ margin: '0 0.75rem' }}>
-                <p
-                  className='title is-4'
-                  style={{
-                    padding: '0 0 1.5rem 0.75rem',
-                    borderBottom: 'thin lightgrey solid',
-                  }}>
-                  Backend
-                </p>
-
-                <ul>
-                  <li>Javascript, Node, Express</li>
-                  <li>Python</li>
-                  <li>C#</li>
-                  <li>T-Sql, NoSql, MongoDB</li>
-                </ul>
-
-                <br />
-              </div>
-            </div>
-
-            <div className='block'>
-              <h2
-                id='other-title'
-                className='title is-4'>
-                <strong>Some Other Projects</strong>
-              </h2>
-
-              <ul id='other-list-pi'>
-                <li>Pi Hole</li>
-                <li>Retro Pi</li>
-                <li>
-                  I have setup a dedicated Pi as a server to deploy projects to
-                </li>
-                <li>
-                  Converting my old computer to a NAS (I am just now starting
-                  this, as of Jan 2024)
-                </li>
-              </ul>
-            </div>
+            <ListContainer
+              title='Other Projects'
+              list={experienceList.other}
+            />
           </div>
         </div>
       </section>
