@@ -27,9 +27,7 @@ function ContactButton(props) {
       onClick={() => {
         openLink(props.action, props.target);
       }}>
-      <span className='icon is-medium'>
-        <i>{props.icon}</i>
-      </span>
+      <span className='icon is-medium'>{props.icon}</span>
       <span className='is-size-4 has-text-weight-semibold'>{props.name}</span>
     </button>
   );
