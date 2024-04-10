@@ -7,6 +7,10 @@ function PageTitle(props) {
         id={props.id}
         className='section title is-1 block has-text-centered orangeify'>
         {props.title}
+        <span
+          id='blinky'
+          className='blink-me'
+          style={{ marginLeft: '1rem' }}></span>
       </div>
       <hr />
       <br />

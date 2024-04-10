@@ -18,7 +18,7 @@ function About() {
         id='about'
         className='is-size-5'>
         <div className='section is-large title is-2 block has-text-centered'>
-          Welcome To My <span className='orangeify'>Portfolio</span>
+          Welcome To My <span className='orangeify'>Website</span>
           <span
             id='blinky'
             className='blink-me'
