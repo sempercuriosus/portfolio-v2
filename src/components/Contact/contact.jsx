@@ -46,8 +46,8 @@ function Contact() {
                 <ContactButton
                   name='Email'
                   icon='📬'
-                  color='is-info'
-                  text='has-text-dark'
+                  color='is-info is-dark'
+                  text='has-text-light'
                   action='email'
                   target={links.email}
                 />
@@ -57,8 +57,8 @@ function Contact() {
                 <ContactButton
                   name='GitHub'
                   icon='💾'
-                  color='is-dark'
-                  text='has-text-light'
+                  color='is-link is-light'
+                  text='has-text-dark'
                   action='github'
                   target={links.github}
                 />
@@ -68,8 +68,8 @@ function Contact() {
                 <ContactButton
                   name='Linkedin'
                   icon='🌐'
-                  color='is-link'
-                  text='has-text-light'
+                  color='is-link is-light'
+                  text='has-text-dark'
                   action='linkedin'
                   target={links.linkedin}
                 />

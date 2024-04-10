@@ -15,7 +15,7 @@ function ContactButton(props) {
 
   return (
     <button
-      className={'button is-large ' + props.color + ' ' + props.text}
+      className={'button is-medium ' + props.color + ' ' + props.text}
       style={{
         width: '100%',
         maxWidth: '350px',
