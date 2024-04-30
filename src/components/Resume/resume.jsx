@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import SectionTitle from '../ui/sectionTitle';
 import PageTitle from '../ui/pageTitle';
 import ListContainer from '../ui/listContainer';
-import ResumePath from '/src/assets/resume/2024-jan-resume-eric-hulse.pdf';
+import ResumePath from '../../../dist/assets/2024-apr-resume-eric-hulse.pdf';
 import extractFilename from '../../utils/extractFilename';
 import experienceList from '../../utils/experienceList';
 
@@ -38,8 +38,8 @@ function Resume() {
 
             <div className='block'>
               <p>
-                My resume is available as downloadable PDF and can be found
-                below.
+                My resume is available as downloadable PDF and
+                can be found below.
               </p>
             </div>
 
@@ -51,7 +51,9 @@ function Resume() {
                 download={resumeFilename}
                 target='_blank'
                 rel='noopener noreferrer'>
-                <button className='button is-info'>Download My Resume</button>
+                <button className='button is-info'>
+                  Download My Resume
+                </button>
               </a>
             </div>
           </div>
@@ -68,8 +70,9 @@ function Resume() {
             </h2>
 
             <p className='block'>
-              Here is what I have experience in, there is no particular order,
-              but I am always willing to add to it.{' '}
+              Here is what I have experience in, there is no
+              particular order, but I am always willing to add to
+              it.{' '}
             </p>
 
             <p className='block'>
