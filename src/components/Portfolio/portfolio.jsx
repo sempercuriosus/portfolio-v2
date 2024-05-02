@@ -46,7 +46,7 @@ function Portfolio() {
       codeRepo:
         'https://github.com/sempercuriosus/dont_you_forget_about_me',
       deployedLink: '',
-      imagePath: 'public/projectImages/dont-you-forget.png',
+      imagePath: '/projectImages/dont-you-forget.png',
     },
     {
       projectCode: 'shws',
@@ -57,7 +57,7 @@ function Portfolio() {
       codeRepo:
         'https://github.com/sempercuriosus/study_hacks_scrape_public',
       deployedLink: '',
-      imagePath: 'public/projectImages/study-hacks.png',
+      imagePath: '/projectImages/study-hacks.png',
     },
     {
       projectCode: 'doom',
@@ -68,7 +68,7 @@ function Portfolio() {
       codeRepo:
         'https://github.com/sempercuriosus/doomsdate_public',
       deployedLink: '',
-      imagePath: 'public/projectImages/doomsday.png',
+      imagePath: '/projectImages/doomsday.png',
     },
     {
       projectCode: 'fittr',
@@ -79,7 +79,7 @@ function Portfolio() {
       codeRepo: 'https://github.com/vonjareew/FitnessTracker',
       deployedLink:
         'https://vonjareew.github.io/FitnessTracker/',
-      imagePath: 'public/projectImages/fitness-tracker.png',
+      imagePath: '/projectImages/fitness-tracker.png',
     },
     {
       projectCode: 'tool',
@@ -100,7 +100,7 @@ function Portfolio() {
         'I put this website together for a local Chiropractor, my wife, when she wanted to refresh what her website looked like.',
       codeRepo: 'https://github.com/sempercuriosus/stateline-fc',
       deployedLink: 'https://statelinechiro.com',
-      imagePath: 'public/projectImages/stateline-preview.png',
+      imagePath: '/projectImages/stateline-preview.png',
     },
     {
       projectCode: 'calCal',
@@ -110,7 +110,7 @@ function Portfolio() {
         'This was not so much a project as it was a challenge inside of a project. I was given the opportunity to write this such that alerts sent out via email, push notifications, and a web api were not delivered on holidays.',
       codeRepo: 'https://github.com/sempercuriosus/calendar',
       deployedLink: '',
-      imagePath: 'public/projectImages/sql-calendar.png',
+      imagePath: '/projectImages/sql-calendar.png',
     },
   ]);
 
