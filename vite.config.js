@@ -8,7 +8,6 @@ export default defineConfig({
     manifest: true,
     rollupOptions: {
       external: [
-        'src/assets/images/eric-dev-pic-2.JPG',
         'src/assets/resume/2024-apr-resume-eric-hulse.pdf',
       ],
     },
