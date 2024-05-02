@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'src/assets/images/eric-dev-pic-2.JPG',
-        'src/assets/resume/2024-jan-resume-eric-hulse.pdf',
+        'src/assets/resume/2024-apr-resume-eric-hulse.pdf',
       ],
     },
   },
