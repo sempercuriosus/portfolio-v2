@@ -76,7 +76,8 @@ function Portfolio() {
       title: 'fitness tracker',
       description:
         'This was our first group project, and I was in a Developer role. I am  responsible for the HTML after the initial framework, CSS for layout to make the application mobile friendly, and Javascript General Functionality and Exercise API integration.',
-      codeRepo: 'https://github.com/vonjareew/FitnessTracker',
+      codeRepo:
+        'https://github.com/sempercuriosus/FitnessTracker_Cloned',
       deployedLink:
         'https://vonjareew.github.io/FitnessTracker/',
       imagePath: 'public/projectImages/fitness-tracker.png',
