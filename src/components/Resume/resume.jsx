@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import SectionTitle from '../ui/sectionTitle';
 import PageTitle from '../ui/pageTitle';
 import ListContainer from '../ui/listContainer';
-import ResumePath from '../../assets/resume/2024-apr-resume-eric-hulse.pdf';
+import ResumePath from '../../assets/resume/eric-hulse-resume.pdf';
 import extractFilename from '../../utils/extractFilename';
 import experienceList from '../../utils/experienceList';
 
