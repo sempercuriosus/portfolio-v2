@@ -36,8 +36,8 @@ function Contact() {
           <p className='block'>
             {' '}
             {/* I do not use social media.  */}
-            Here is how I can be found, but it may be a day or two for me to
-            return.
+            Here is how I can be found, but it may be a day or
+            two for me to return.
           </p>
 
           <div className='section'>
@@ -59,7 +59,7 @@ function Contact() {
                   icon='💾'
                   color='is-link is-light'
                   text='has-text-dark'
-                  action='github'
+                  action='linkto'
                   target={links.github}
                 />
               </div>
@@ -70,7 +70,7 @@ function Contact() {
                   icon='🌐'
                   color='is-link is-light'
                   text='has-text-dark'
-                  action='linkedin'
+                  action='linkto'
                   target={links.linkedin}
                 />
               </div>
