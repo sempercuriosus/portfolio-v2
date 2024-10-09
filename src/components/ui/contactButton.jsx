@@ -6,7 +6,7 @@ function ContactButton(props) {
   const openLink = (action, target) => {
     if (action == 'email') {
       window.location.href = 'mailto:' + target;
-    } else if (action == 'github') {
+    } else if (action == 'linkto') {
       window.open(target, '_blank', 'noopener,noreferrer');
     } else {
       console.log('Action not found');
@@ -15,7 +15,9 @@ function ContactButton(props) {
 
   return (
     <button
-      className={'button is-medium ' + props.color + ' ' + props.text}
+      className={
+        'button is-medium ' + props.color + ' ' + props.text
+      }
       style={{
         width: '100%',
         maxWidth: '350px',
@@ -28,7 +30,9 @@ function ContactButton(props) {
         openLink(props.action, props.target);
       }}>
       <span className='icon is-medium'>{props.icon}</span>
-      <span className='is-size-4 has-text-weight-semibold'>{props.name}</span>
+      <span className='is-size-4 has-text-weight-semibold'>
+        {props.name}
+      </span>
     </button>
   );
 }

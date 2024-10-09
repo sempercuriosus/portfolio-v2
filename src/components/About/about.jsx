@@ -18,7 +18,8 @@ function About() {
         id='about'
         className='is-size-5'>
         <div className='section is-large title is-2 block has-text-centered'>
-          Welcome To My <span className='orangeify'>Website</span>
+          Welcome To My{' '}
+          <span className='orangeify'>Website</span>
           <span
             id='blinky'
             className='blink-me'
@@ -51,13 +52,17 @@ function About() {
                 className='has-text-weight-bold'>
                 Eric
               </span>{' '}
-              and I am a Full Stack Web Developer currently based in South
-              Carolina, USA, originally hailing from Wisconsin 🧀.
+              and I am a Full Stack Web Developer currently based
+              in South Carolina 🌴, originally hailing from
+              Wisconsin 🧀.
             </p>
           </div>
 
           <div className='block'>
-            <p>I love working with my hands, crafting, and creating.</p>
+            <p>
+              I love working with my hands, crafting, and
+              creating.
+            </p>
           </div>
         </div>
 
@@ -74,19 +79,23 @@ function About() {
 
         <div className='block'>
           <p>
-            I have a genuine joy for learning, which is why I chose the username{' '}
-            <strong>Semper Curiosus</strong>. It is my curiosity about what
-            surounds me drives me to understand the <em>why</em> behind them.
-            {/* I am always eager to explore the
-                  world around me. */}
+            I have a genuine joy for learning, which is why I
+            chose the username <strong>Semper Curiosus</strong>.
+            It is my curiosity about what surounds me drives me
+            to understand the <em>why</em> behind them.
           </p>
 
+          <br />
+
           <p>
-            I embrace the process of trying, to get started and make mistakes,
-            recognizing that perfection is not the goal. I believe that
-            technology that empowers people, provides solutions, remains
-            unintrusive, and simplifies life. I aim to make that kind of
-            technology.
+            I embrace the process of trying, to get started and
+            make mistakes, recognizing that perfection is not the
+            goal. It is the action in taking knowledge and
+            building a deeper understanding that matters. I
+            believe that technology that empowers people,
+            provides solutions, is unintrusive, and simplifies
+            life. This is what I want to create -- technology to
+            help.
           </p>
         </div>
 
