@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Hobbies from '../Hobbies/hobbies';
 import SectionTitle from '../ui/sectionTitle';
 
-const dev_picPath = '/images/eric-dev-pic-2.jpg';
+const dev_picPath = '/images/eric-dev-pic.jpg';
 
 function About() {
   document.title = 'About | Third Coast 🦡';
@@ -66,17 +66,6 @@ function About() {
           </div>
         </div>
 
-        <br />
-
-        <figure className='block image'>
-          <img
-            src={dev_picPath}
-            alt='Developer Profile Image'
-            className='container'
-            style={{ borderRadius: '10px', width: '80%' }}
-          />
-        </figure>
-
         <div className='block'>
           <p>
             I have a genuine joy for learning, which is why I
@@ -102,6 +91,21 @@ function About() {
         {/* Hobbies*/}
         <Hobbies />
         <br />
+
+        <figure className='block image'>
+          <img
+            src={dev_picPath}
+            alt='Developer Profile Image'
+            className='container'
+            // width='128'
+            // height='128'
+            style={{
+              borderRadius: '10px',
+              width: '256px',
+              // height: '128px',
+            }}
+          />
+        </figure>
 
         <div className='section has-text-centered'>
           Here are some of my{' '}
