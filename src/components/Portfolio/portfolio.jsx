@@ -97,7 +97,7 @@ function Portfolio() {
       featuredProject: true,
       title: 'Stateline Family Chiropractic',
       description:
-        'I put this website together for a local Chiropractor, my wife, when she wanted to refresh what her website looked like.',
+        'I put this website together for a local Chiropractor when she wanted to refresh what her website looked like. I had some fun with this trying to make it a little funky but also still remain professional.',
       codeRepo: 'https://github.com/sempercuriosus/stateline-fc',
       deployedLink: 'https://statelinechiro.com',
       imagePath: 'public/projectImages/stateline-preview.png',
@@ -111,6 +111,16 @@ function Portfolio() {
       codeRepo: 'https://github.com/sempercuriosus/calendar',
       deployedLink: '',
       imagePath: 'public/projectImages/sql-calendar.png',
+    },
+    {
+      projectCode: 'cacheCab',
+      featuredProject: true,
+      title: 'Cache Cabinet',
+      description:
+        'This was our final project, and I am so proud of the idea we came up with. Nemi and Keith were such a cool team to have worked with. This app is meant to help you organize collections you have curated, and on it we made the choice to not have roles but instead follow a feature from the front to the back end taking ownership of the feature. A side note -- this may take some time to spin up on Render. We have it hosted on the free-tier so it is deprioritized when it is in active.',
+      codeRepo: 'https://github.com/sempercuriosus/CacheCabinet',
+      deployedLink: 'https://cache-cabinet.onrender.com/',
+      imagePath: 'public/projectImages/cache-cab.png',
     },
   ]);
 
