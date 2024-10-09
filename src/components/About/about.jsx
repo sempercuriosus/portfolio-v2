@@ -113,18 +113,19 @@ function About() {
             <Link
               id='link-portfolio-about'
               to='/Portfolio'>
-              selected works
+              selected projects
             </Link>
           </strong>{' '}
-          or if you would like to{' '}
+          {/* or if you would like to{' '} */}
+          <br />
+          <br />
           <strong>
             <Link
               id='link-contact-about'
               to='/Contact'>
-              connect
+              Connect with me
             </Link>
-          </strong>{' '}
-          with me
+          </strong>
         </div>
         {/* </div> */}
       </section>
