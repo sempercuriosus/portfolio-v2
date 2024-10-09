@@ -1,6 +1,6 @@
 const projectData = {
   technologies: [
-    { name: 'Node' },
+    { name: 'Node.js' },
     { name: 'GIT' },
     { name: 'Netlify' },
     { name: 'Render' },
@@ -9,14 +9,14 @@ const projectData = {
   ],
   languagesAndFrameworks: [
     { name: 'Javascript' },
-    { name: 'Express' },
+    { name: 'Express.js' },
+    { name: 'React.js' },
     { name: 'Python' },
     { name: 'C#' },
     { name: 'T-SQL' },
     { name: 'No SQL' },
     { name: 'MongoDB' },
     { name: 'HTML' },
-    { name: 'React' },
     { name: 'CSS' },
     { name: 'Bulma CSS' },
     { name: 'Bootstrap CSS' },
