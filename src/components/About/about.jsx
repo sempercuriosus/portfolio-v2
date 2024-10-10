@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Hobbies from '../Hobbies/hobbies';
 import SectionTitle from '../ui/sectionTitle';
 
@@ -106,28 +105,6 @@ function About() {
             }}
           />
         </figure>
-
-        <div className='section has-text-centered'>
-          Here are some of my{' '}
-          <strong>
-            <Link
-              id='link-portfolio-about'
-              to='/Portfolio'>
-              selected projects
-            </Link>
-          </strong>{' '}
-          {/* or if you would like to{' '} */}
-          <br />
-          <br />
-          <strong>
-            <Link
-              id='link-contact-about'
-              to='/Contact'>
-              Connect with me
-            </Link>
-          </strong>
-        </div>
-        {/* </div> */}
       </section>
     </>
   );
