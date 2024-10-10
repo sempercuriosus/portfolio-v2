@@ -40,7 +40,10 @@ function ContactButton(props) {
 ContactButton.propTypes = {
   name: PropTypes.string,
   text: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
   color: PropTypes.string,
   action: PropTypes.string,
   target: PropTypes.string,
