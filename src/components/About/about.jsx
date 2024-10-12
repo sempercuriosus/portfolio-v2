@@ -91,7 +91,7 @@ function About() {
         <Hobbies />
         <br />
 
-        <figure className='block image'>
+        {/* <figure className='block image'>
           <img
             src={dev_picPath}
             alt='Developer Profile Image'
@@ -104,7 +104,7 @@ function About() {
               // height: '128px',
             }}
           />
-        </figure>
+        </figure> */}
       </section>
     </>
   );
