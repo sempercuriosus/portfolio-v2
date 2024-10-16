@@ -15,7 +15,7 @@ function About() {
     <>
       <section
         id='about'
-        className='is-size-5'>
+        className='is-size-5 block'>
         <div className='section is-large title is-2 block has-text-centered'>
           Welcome To My{' '}
           <span className='orangeify'>Website</span>
