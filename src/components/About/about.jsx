@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Hobbies from '../Hobbies/hobbies';
 import SectionTitle from '../ui/sectionTitle';
 
-const dev_picPath = '/images/eric-dev-pic.jpg';
+// const dev_picPath = '/images/eric-dev-pic.jpg';
 
 function About() {
   document.title = 'About | Third Coast 🦡';
